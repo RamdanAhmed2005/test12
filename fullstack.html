@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار الـ Full Stack الشامل | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #0ea5e9;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #8b5cf6; /* لون بنفسجي مميز للـ Full Stack */
+            --header-gradient: linear-gradient(135deg, #4338ca 0%, #1e1b4b 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--accent);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #f1f5f9;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .checkpoint {
+            background: #fdf2f8;
+            color: #be185d;
+            border: 1px solid #fbcfe8;
+            padding: 8px 15px;
+            border-radius: 12px;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlight-blue { background: #e0e7ff; color: #4338ca; }
+        .highlight-green { background: #dcfce7; color: #15803d; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--accent);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: var(--text-main);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">Full Stack Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مطور الـ Full Stack المودرن</h1>
+        <p>دليل الخطوة بخطوة للمبتدئين من الصفر وحتى الاحتراف ونشر التطبيقات</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🎨 المرحلة الأولى: الواجهات (Frontend)</h2>
+                <span class="category-title">الأساسيات</span>
+                <div class="items-list">
+                    <div class="item highlight-blue">HTML</div>
+                    <div class="item highlight-blue">CSS</div>
+                    <div class="item highlight-blue">JavaScript</div>
+                </div>
+                <div class="checkpoint">🏁 Checkpoint: بناء صفحات ثابتة (Static)</div>
+                <div class="checkpoint">🏁 Checkpoint: إضافة التفاعلية (Interactivity)</div>
+                
+                <span class="category-title" style="margin-top:20px;">الأدوات المتقدمة</span>
+                <div class="items-list">
+                    <div class="item">npm / Yarn</div>
+                    <div class="item">Git & GitHub</div>
+                    <div class="item">Tailwind CSS</div>
+                    <div class="item highlight-blue">React</div>
+                </div>
+                <div class="checkpoint">🏁 Checkpoint: العمل الجماعي وتطبيقات React</div>
+            </div>
+
+            <div class="section-card">
+                <h2>⚙️ المرحلة الثانية: الخلفية (Backend)</h2>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px;">نصيحة: ابدأ بـ Node.js لأنك تتقن JavaScript بالفعل.</p>
+                <div class="items-list">
+                    <div class="item highlight-green">Node.js</div>
+                    <div class="item highlight-green">PHP</div>
+                    <div class="item">RESTful APIs</div>
+                    <div class="item">JWT Auth</div>
+                    <div class="item">Redis</div>
+                    <div class="item">PostgreSQL</div>
+                    <div class="item">Linux Basics</div>
+                </div>
+                <div class="checkpoint">🏁 Checkpoint: بناء تطبيقات الـ CLI</div>
+                <div class="checkpoint">🏁 Checkpoint: عمليات CRUD كاملة</div>
+                <div class="checkpoint">🏁 Checkpoint: تطبيق كامل (Full App)</div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 المرحلة الثالثة: السيرفرات (DevOps)</h2>
+                <span class="category-title">AWS Services</span>
+                <div class="items-list">
+                    <div class="item">EC2</div>
+                    <div class="item">S3</div>
+                    <div class="item highlight-green">MY SQL</div>
+                    <div class="item">VPC</div>
+                    <div class="item">Route53</div>
+                    <div class="item">SES</div>
+                </div>
+                <span class="category-title" style="margin-top:20px;">Automation & CI/CD</span>
+                <div class="items-list">
+                    <div class="item">GitHub Actions</div>
+                    <div class="item">Ansible</div>
+                    <div class="item">Terraform</div>
+                    <div class="item">Monitoring (Monit)</div>
+                </div>
+                <div class="checkpoint">🏁 Checkpoint: النشر (Deployment) والأتمتة</div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 قاعدة النجاح في ZRR Academy</h3>
+                <p>لا تكتفِ بالقراءة فقط؛ عند كل "نقطة تفتيش" (Checkpoint)، هناك أفكار مشاريع يجب عليك بناؤها لتثبيت المعلومة. الممارسة هي ما تصنع المطور المحترف.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--accent);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>هل يمكنني تعلم الـ Full Stack في 3 أشهر؟</h4>
+                    <p>نعم، فقط إذا كنت تتقن بالفعل أحد الجانبين (Frontend أو Backend) وتحتاج لإكمال الآخر. أما للمبتدئين، فالأمر يحتاج لوقت أطول وخبرة عملية كبيرة لبناء عقلية هندسية سليمة.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>كيف أستعد لمقابلة Full Stack Developer؟</h4>
+                    <p>ركز على بناء مشاريع تربط الجانبين، افهم كيف يتم تداول البيانات بين المتصفح والسيرفر، وتدرب على حل المشكلات (Problem Solving) في الجانبين.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما الفرق بين الـ Full Stack ومطور البرمجيات (Software Engineer)؟</h4>
+                    <p>الـ Full Stack يركز بشكل أساسي على تقنيات الويب (الواجهات والخلفية)، بينما مهندس البرمجيات قد يعمل على أنظمة التشغيل، المترجمات، أو تطبيقات سطح المكتب المعقدة بجانب الويب.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل تعلم الـ Full Stack صعب؟</h4>
+                    <p>هو "دسم" وليس صعباً. التحدي يكمن في كثرة الأدوات، لذا اتبع المسار خطوة بخطوة ولا تنتقل لنقطة قبل إتمام التي تسبقها.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

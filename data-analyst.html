@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار محلل البيانات الشامل | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #059669; /* أخضر زمردي للبيانات */
+            --secondary: #f59e0b; /* برتقالي للتحليل */
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #10b981;
+            --header-gradient: linear-gradient(135deg, #064e3b 0%, #059669 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #ecfdf5;
+            color: #065f46;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .important { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: var(--text-main);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">Data Analyst Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار محلل البيانات (Data Analyst)</h1>
+        <p>استخرج الرؤى، حلل الأرقام، وساعد الشركات على اتخاذ قرارات ذكية بناءً على الواقع</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>📊 الأساسيات وإكسيل</h2>
+                <span class="category-title">Data Analytics Types</span>
+                <div class="items-list">
+                    <div class="item">Descriptive</div>
+                    <div class="item">Diagnostic</div>
+                    <div class="item">Predictive</div>
+                    <div class="item">Prescriptive</div>
+                </div>
+                <span class="category-title">Mastering Excel</span>
+                <div class="items-list">
+                    <div class="item important">Pivot Tables</div>
+                    <div class="item important">VLOOKUP / XLOOKUP</div>
+                    <div class="item">Charting</div>
+                    <div class="item">Statistical Functions</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>💻 البرمجة وقواعد البيانات</h2>
+                <span class="category-title">Languages</span>
+                <div class="items-list">
+                    <div class="item important">Python</div>
+                    <div class="item">R Language</div>
+                </div>
+                <span class="category-title">Database Skills</span>
+                <div class="items-list">
+                    <div class="item important">SQL (Mastery)</div>
+                    <div class="item">Web Scraping</div>
+                    <div class="item">APIs Connection</div>
+                </div>
+                <span class="category-title">Libraries</span>
+                <div class="items-list">
+                    <div class="item">Pandas</div>
+                    <div class="item">NumPy</div>
+                    <div class="item">Matplotlib / Seaborn</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📈 أدوات تصور البيانات (BI)</h2>
+                <span class="category-title">BI Platforms</span>
+                <div class="items-list">
+                    <div class="item important">Power BI</div>
+                    <div class="item important">Tableau</div>
+                </div>
+                <span class="category-title">Charting Mastery</span>
+                <div class="items-list">
+                    <div class="item">Heatmaps</div>
+                    <div class="item">Scatter Plots</div>
+                    <div class="item">Funnel Charts</div>
+                    <div class="item">Histograms</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🔢 الإحصاء والرياضيات</h2>
+                <span class="category-title">Descriptive Statistics</span>
+                <div class="items-list">
+                    <div class="item">Mean / Median / Mode</div>
+                    <div class="item">Standard Deviation</div>
+                    <div class="item">Skewness & Kurtosis</div>
+                </div>
+                <span class="category-title">Advanced Analysis</span>
+                <div class="items-list">
+                    <div class="item important">Hypothesis Testing</div>
+                    <div class="item">Regression Analysis</div>
+                    <div class="item">Correlation</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🤖 تعلم الآلة والبيانات الضخمة</h2>
+                <span class="category-title">ML Algorithms</span>
+                <div class="items-list">
+                    <div class="item">Supervised Learning</div>
+                    <div class="item">Unsupervised Learning</div>
+                    <div class="item">Decision Trees</div>
+                    <div class="item">K-Means Clustering</div>
+                </div>
+                <span class="category-title">Big Data</span>
+                <div class="items-list">
+                    <div class="item">Hadoop</div>
+                    <div class="item">Spark</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 نصيحة محلل بيانات ZRR</h3>
+                <p>البيانات بدون قصة هي مجرد أرقام. تعلم كيف تحكي "قصة" من خلال بياناتك (Data Storytelling) لتقنع أصحاب القرار برؤيتك.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>هل تحليل البيانات مهنة جيدة للمستقبل؟</h4>
+                    <p>بالتأكيد، التكنولوجيا هي قلب كل شركة، والشركات تنتج كميات هائلة من البيانات. الطلب على المحترفين الذين يمكنهم تحويل هذه البيانات إلى قرارات استراتيجية في أعلى مستوياته تاريخياً.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما الفرق بين محلل البيانات ومهندس البيانات؟</h4>
+                    <p>محلل البيانات يركز على استخراج الرؤى والإجابة على الأسئلة التجارية، بينما مهندس البيانات (Data Engineer) يركز على بناء وتطوير البنية التحتية والأنظمة التي تجمع وتخزن هذه البيانات.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل يمكنني تعليم نفسي تحليل البيانات؟</h4>
+                    <p>نعم، هناك مصادر ممتازة مثل Coursera و edX و Kaggle. ابدأ بتعلم Excel و SQL ثم انتقل لـ Python و Power BI مع بناء مشاريع حقيقية.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل يجب أن أكون عبقرياً في الرياضيات؟</h4>
+                    <p>لا، لكنك تحتاج لفهم قوي للأساسيات الإحصائية والقدرة على التفكير المنطقي لتحليل العلاقات بين المتغيرات المختلفة.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

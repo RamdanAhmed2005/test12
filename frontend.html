@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المسار الشامل للـ Frontend | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #0ea5e9;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #f59e0b;
+            --header-gradient: linear-gradient(135deg, #0f172a 0%, #4f46e5 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        /* ✅ إصلاح التصميم: تعديل الـ Hero لعام 2026 */
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px; /* زيادة البادينج السفلي لعرض الكروت */
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* مَيَلان أخف عشان الكلام يظهر */
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #f1f5f9;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid transparent;
+        }
+        .item:hover {
+            border-color: var(--secondary);
+            background: white;
+            color: var(--secondary);
+            transform: scale(1.05);
+        }
+
+        .highlight-item { background: #e0e7ff; color: var(--primary); }
+        .ai-item { background: #fff7ed; color: #c2410c; border: 1px dashed #fdba74; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* ✅ قسم الأسئلة الشائعة (FAQ) - مُحدث بالكامل */
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: var(--text-main);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">Frontend Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>المسار الكامل لاحتراف الـ Frontend</h1>
+        <p>من الصفر (Internet Basics) حتى الذكاء الاصطناعي (AI Implementation)</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🌐 الإنترنت والأساسيات</h2>
+                <span class="category-title">Internet</span>
+                <div class="items-list">
+                    <div class="item">How does the internet work?</div>
+                    <div class="item">What is HTTP?</div>
+                    <div class="item">Domain Name</div>
+                    <div class="item">Hosting</div>
+                    <div class="item">DNS & How it works</div>
+                    <div class="item">Browsers & How they work</div>
+                </div>
+                <span class="category-title">HTML & CSS</span>
+                <div class="items-list">
+                    <div class="item highlight-item">HTML</div>
+                    <div class="item highlight-item">CSS</div>
+                    <div class="item">Tailwind</div>
+                    <div class="item">CSS Frameworks</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>JS & بيئة العمل 🛠️</h2>
+                <span class="category-title">Programming Language</span>
+                <div class="items-list">
+                    <div class="item highlight-item">JavaScript</div>
+                    <div class="item">TypeScript</div>
+                </div>
+                <span class="category-title">Version Control</span>
+                <div class="items-list">
+                    <div class="item">Git</div>
+                    <div class="item">GitHub</div>
+                    <div class="item">GitLab</div>
+                </div>
+                <span class="category-title">Package Managers</span>
+                <div class="items-list">
+                    <div class="item">npm</div>
+                    <div class="item">pnpm</div>
+                    <div class="item">yarn</div>
+                    <div class="item">Bun</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 أطر العمل والبناء</h2>
+                <span class="category-title">Frameworks</span>
+                <div class="items-list">
+                    <div class="item highlight-item">React</div>
+                    <div class="item">Next.js</div>
+                    <div class="item">Vue.js</div>
+                    <div class="item">Nuxt.js</div>
+                    <div class="item">Angular</div>
+                    <div class="item">Svelte / Svelte Kit</div>
+                    <div class="item">Solid JS</div>
+                </div>
+                <span class="category-title">Build Tools & Bundlers</span>
+                <div class="items-list">
+                    <div class="item">Vite</div>
+                    <div class="item">esbuild</div>
+                    <div class="item">Rollup</div>
+                    <div class="item">Parcel</div>
+                    <div class="item">SWC</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🧠 المواضيع المتقدمة</h2>
+                <span class="category-title">Testing & Linting</span>
+                <div class="items-list">
+                    <div class="item">Vitest</div>
+                    <div class="item">Jest</div>
+                    <div class="item">Cypress</div>
+                    <div class="item">Playwright</div>
+                    <div class="item">ESLint</div>
+                    <div class="item">Prettier</div>
+                </div>
+                <span class="category-title">Web Security</span>
+                <div class="items-list">
+                    <div class="item">CORS</div>
+                    <div class="item">HTTPS</div>
+                    <div class="item">CSP</div>
+                    <div class="item">OWASP Risks</div>
+                </div>
+            </div>
+
+            <div class="section-card" style="border-top-color: var(--accent);">
+                <h2>🤖 الذكاء الاصطناعي للمطورين</h2>
+                <span class="category-title">AI Tools</span>
+                <div class="items-list">
+                    <div class="item ai-item">Claude Code</div>
+                    <div class="item ai-item">Cursor</div>
+                    <div class="item ai-item">Copilot</div>
+                    <div class="item ai-item">Gemini / OpenAI</div>
+                </div>
+                <span class="category-title">AI Skills</span>
+                <div class="items-list">
+                    <div class="item ai-item">Prompt Engineering</div>
+                    <div class="item ai-item">AI Agents Roadmap</div>
+                    <div class="item ai-item">How LLMs work</div>
+                    <div class="item ai-item">AI vs Traditional Coding</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🌍 النشر والأداء</h2>
+                <span class="category-title">Deployment</span>
+                <div class="items-list">
+                    <div class="item">Vercel</div>
+                    <div class="item">Netlify</div>
+                    <div class="item">Cloudflare</div>
+                    <div class="item">GitHub Pages</div>
+                </div>
+                <span class="category-title">Performance</span>
+                <div class="items-list">
+                    <div class="item">Lighthouse</div>
+                    <div class="item">DevTools Usage</div>
+                    <div class="item">Service Workers</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 نصيحة ZRR Academy</h3>
+                <p>الـ HTML و CSS و JavaScript هي العمود الفقري لأي شيء. لا تنتقل لتعلم Framework قبل إتقانهم وبناء مشاريع حقيقية بهم.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة عن مطوري الواجهات (Frontend)</h2>
+                
+                <div class="faq-item">
+                    <h4>هل تطوير الواجهات (Frontend) هو برمجة حقيقية؟</h4>
+                    <p>نعم، بكل تأكيد. أنت كمطور واجهات تقوم بكتابة أكواد معقدة، تطبيق أنماط التصميم (Design Patterns)، والتعامل مع هيكلة البيانات بشكل كامل داخل المتصفح.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>كيف أستعد لمقابلات الـ Frontend؟</h4>
+                    <p>ركز على أساسيات لغة JavaScript القوية، فهم كامل للـ DOM Manipulation، تنسيق الـ CSS المتقدم (Flexbox/Grid)، وحل مشاكل البرمجية (Problem Solving) المتعلقة بالواجهات.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل مهنة مطور الـ Frontend مهنة جيدة؟</h4>
+                    <p>هي من أكثر المهن طلباً في سوق العمل لعام 2026، والرواتب فيها مرتفعة جداً، خاصة إذا دمجت مهاراتك مع أدوات الذكاء الاصطناعي الجديدة.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>كيف يختلف الـ Frontend عن الـ Backend؟</h4>
+                    <p>الـ Frontend هو كل ما يراه المستخدم ويتفاعل معه في المتصفح، بينما الـ Backend هو ما يحدث في الخادم (Server) ويشمل قواعد البيانات ومنطق التطبيق الخلفي.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هي مسميات وظائف مطور الـ Frontend؟</h4>
+                    <p>تختلف المسميات حسب الخبرة: (Junior Frontend Developer, Senior Frontend Engineer, UI Developer, Client-Side Engineer, JavaScript Developer).</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

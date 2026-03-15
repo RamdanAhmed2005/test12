@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مهندس الذكاء الاصطناعي | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8b5cf6; /* بنفسجي AI */
+            --secondary: #ec4899; /* وردي للتميز */
+            --bg: #0f172a; /* خلفية داكنة جداً للمظهر التقني */
+            --card-bg: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #06b6d4;
+            --header-gradient: linear-gradient(135deg, #4c1d95 0%, #1e1b4b 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: #020617;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            border-bottom: 1px solid #334155;
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--accent); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; text-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid #334155;
+            border-top: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #0f172a;
+            color: #cbd5e1;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #334155;
+        }
+        .item:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .highlight-ai { background: #4c1d95; color: #ede9fe; border: 1px solid var(--primary); }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: var(--card-bg); border: 1px solid #334155; margin-bottom: 20px; padding: 25px; border-radius: 15px; }
+        .faq-item h4 { color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: #020617;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">AI Engineer Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مهندس الذكاء الاصطناعي (AI Engineer)</h1>
+        <p>تعلم بناء تطبيقات تعتمد على نماذج اللغة الضخمة (LLMs) والعملاء الأذكياء (AI Agents)</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🧠 أساسيات نماذج اللغة (LLM)</h2>
+                <span class="category-title">Core Elements</span>
+                <div class="items-list">
+                    <div class="item highlight-ai">GPT (OpenAI)</div>
+                    <div class="item highlight-ai">Gemini (Google)</div>
+                    <div class="item highlight-ai">Claude (Anthropic)</div>
+                    <div class="item">Llama (Meta)</div>
+                </div>
+                <span class="category-title">Key Terminology</span>
+                <div class="items-list">
+                    <div class="item">Tokens</div>
+                    <div class="item">Context Window</div>
+                    <div class="item">Temperature</div>
+                    <div class="item">Function Calling</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>✍️ هندسة الأوامر (Prompt Engineering)</h2>
+                <span class="category-title">Techniques</span>
+                <div class="items-list">
+                    <div class="item">Zero-Shot</div>
+                    <div class="item">Few-Shot</div>
+                    <div class="item highlight-ai">Chain of Thought (CoT)</div>
+                    <div class="item">ReAct</div>
+                </div>
+                <span class="category-title">Context Engineering</span>
+                <div class="items-list">
+                    <div class="item">System Prompts</div>
+                    <div class="item">Structured Output (JSON)</div>
+                    <div class="item">Prompt Caching</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📂 أنظمة RAG وقواعد البيانات</h2>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px;">ربط الـ AI ببياناتك الخاصة (Retrieval Augmented Generation)</p>
+                <span class="category-title">Vector Databases</span>
+                <div class="items-list">
+                    <div class="item">Pinecone</div>
+                    <div class="item">Chroma DB</div>
+                    <div class="item">Weaviate</div>
+                    <div class="item">MongoDB Atlas</div>
+                </div>
+                <span class="category-title">Processes</span>
+                <div class="items-list">
+                    <div class="item highlight-ai">Embeddings</div>
+                    <div class="item">Semantic Search</div>
+                    <div class="item">Chunking</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🤖 العملاء الأذكياء (AI Agents)</h2>
+                <span class="category-title">Frameworks</span>
+                <div class="items-list">
+                    <div class="item highlight-ai">LangChain</div>
+                    <div class="item highlight-ai">LlamaIndex</div>
+                    <div class="item">AgentKit</div>
+                    <div class="item">MCP (Model Context Protocol)</div>
+                </div>
+                <span class="category-title">Multimodal AI</span>
+                <div class="items-list">
+                    <div class="item">Vision APIs</div>
+                    <div class="item">Whisper (Speech to Text)</div>
+                    <div class="item">DALL-E / Midjourney</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🛠️ أدوات التطوير و AI Ops</h2>
+                <span class="category-title">Local LLMs</span>
+                <div class="items-list">
+                    <div class="item">Ollama</div>
+                    <div class="item">LM Studio</div>
+                    <div class="item">Hugging Face</div>
+                </div>
+                <span class="category-title">Security & Ethics</span>
+                <div class="items-list">
+                    <div class="item">Prompt Injection Defense</div>
+                    <div class="item">Bias & Fairness</div>
+                    <div class="item">Privacy Monitoring</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 رؤية ZRR لمستقبل الـ AI</h3>
+                <p>مهندس الذكاء الاصطناعي في 2026 لا يحتاج لبناء النماذج من الصفر دائماً، بل يحتاج لإتقان ربط النماذج ببعضها (Orchestration) وبناء أنظمة عملاء (Agents) تحل مشاكل حقيقية.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة حول مسار الـ AI</h2>
+                
+                <div class="faq-item">
+                    <h4>هل مهنة مهندس الذكاء الاصطناعي خيار جيد؟</h4>
+                    <p>نعم، وبشدة. الـ AI يغير كل الصناعات الآن، من الصحة للمال. الشركات تطلب مهندسين يستطيعون دمج هذه التقنيات في منتجاتهم لرفع الكفاءة والابتكار.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الـ Reinforcement Learning (تعلم التعزيز)؟</h4>
+                    <p>هو نوع من تعلم الآلة حيث يتعلم "العميل الذكي" اتخاذ القرارات عن طريق التجربة والخطأ للحصول على أكبر قدر من المكافآت، وهو الأساس خلف تطوير ChatGPT و o1.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل يحتاج مهندس الـ AI إلى شهادة جامعية؟</h4>
+                    <p>الشهادة تساعد في فهم الرياضيات المعقدة، لكن في سوق الـ AI الحالي، مشاريعك على GitHub وإتقانك لأدوات مثل LangChain و RAG أهم بكثير للشركات التقنية.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما الفرق بين AI Engineer و ML Engineer؟</h4>
+                    <p>محلل الـ ML يركز على بناء وتدريب النماذج الرياضية، بينما مهندس الـ AI يركز على استخدام النماذج الجاهزة (مثل GPT) ودمجها في تطبيقات برمجية كاملة.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>
