@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مطور أندرويد 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3DDC84; /* لون أندرويد الرسمي */
+            --secondary: #073042; /* لون أندرويد الداكن */
+            --bg: #f0f4f8;
+            --card-bg: #ffffff;
+            --text-main: #1a1c1e;
+            --text-muted: #44474e;
+            --accent: #4285F4; /* أزرق جوجل */
+            --header-gradient: linear-gradient(135deg, #073042 0%, #3DDC84 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--secondary); text-decoration: none; }
+        .logo span { color: var(--primary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-bottom: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--accent);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .modern { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--secondary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: var(--secondary); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">Android Developer 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مطور تطبيقات أندرويد</h1>
+        <p>احترف بناء تطبيقات الهواتف الذكية باستخدام Kotlin وأحدث أدوات Google Jetpack</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🏗️ التأسيس واللغة</h2>
+                <span class="category-title">Languages</span>
+                <div class="items-list">
+                    <div class="item modern">Kotlin (Primary)</div>
+                    <div class="item">Java (Legacy)</div>
+                </div>
+                <span class="category-title">Core Knowledge</span>
+                <div class="items-list">
+                    <div class="item">OOP Principles</div>
+                    <div class="item">Data Structures</div>
+                    <div class="item">Gradle Build System</div>
+                    <div class="item">Git & Version Control</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📱 مكونات التطبيق الأساسية</h2>
+                <span class="category-title">Core Components</span>
+                <div class="items-list">
+                    <div class="item">Activities & Lifecycle</div>
+                    <div class="item">Fragments</div>
+                    <div class="item">Intents (Implicit/Explicit)</div>
+                    <div class="item">Broadcast Receivers</div>
+                    <div class="item">Services</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🎨 تصميم الواجهات</h2>
+                <span class="category-title">The Future</span>
+                <div class="items-list">
+                    <div class="item modern">Jetpack Compose</div>
+                    <div class="item">Material Design 3</div>
+                    <div class="item">Animations</div>
+                </div>
+                <span class="category-title">Traditional UI</span>
+                <div class="items-list">
+                    <div class="item">XML Layouts</div>
+                    <div class="item">ConstraintLayout</div>
+                    <div class="item">RecyclerView</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📐 المعمارية وتخزين البيانات</h2>
+                <span class="category-title">Patterns</span>
+                <div class="items-list">
+                    <div class="item modern">MVVM / MVI</div>
+                    <div class="item">Repository Pattern</div>
+                    <div class="item">Hilt (Dependency Injection)</div>
+                </div>
+                <span class="category-title">Data Storage</span>
+                <div class="items-list">
+                    <div class="item modern">Room Database</div>
+                    <div class="item">DataStore</div>
+                    <div class="item">Shared Preferences</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🌐 الربط والخدمات السحابية</h2>
+                <span class="category-title">API & Network</span>
+                <div class="items-list">
+                    <div class="item modern">Retrofit</div>
+                    <div class="item">Coroutines & Flow</div>
+                    <div class="item">OkHttp</div>
+                </div>
+                <span class="category-title">Firebase & Cloud</span>
+                <div class="items-list">
+                    <div class="item">Cloud Messaging (FCM)</div>
+                    <div class="item">Crashlytics</div>
+                    <div class="item">Firestore</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 نصيحة ZRR لمطوري الأندرويد</h3>
+                <p>عالم الأندرويد يتجه الآن بالكامل نحو البرمجة التصريحية (Declarative UI). ابدأ فوراً بـ Jetpack Compose ولا تضيع وقتاً طويلاً في الـ XML القديم إلا للضرورة.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--secondary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>هل يجب أن أتعلم Java أم Kotlin؟</h4>
+                    <p>كوتلن (Kotlin) هي اللغة الرسمية والمدعومة بشكل أساسي من جوجل حالياً. ابدأ بـ Kotlin، وستحتاج Java فقط إذا كنت تعمل على تحديث تطبيقات قديمة جداً.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الفرق بين أندرويد و Flutter؟</h4>
+                    <p>أندرويد (Native) يعطيك أداءً مثالياً وصولاً كاملاً لمميزات الجهاز، بينما Flutter هو إطار عمل يسمح لك ببناء تطبيق واحد يعمل على أندرويد و iOS في نفس الوقت.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>كيف أقوم بنشر تطبيقي؟</h4>
+                    <p>تحتاج لإنشاء حساب مطور على Google Play Console (بتكلفة 25$ لمرة واحدة مدى الحياة) ثم رفع ملف الـ App Bundle الخاص بك.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

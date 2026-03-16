@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مدير الهندسة البرمجية 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e293b; /* كحلي قيادي */
+            --accent: #eab308; /* ذهبي للتميز */
+            --secondary: #64748b;
+            --bg: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --header-gradient: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-bottom: 3px solid var(--accent);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--accent); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-right: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-title {
+            font-weight: 700;
+            color: var(--secondary);
+            font-size: 0.8rem;
+            margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #f8fafc;
+            color: #1e293b;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #cbd5e1;
+        }
+
+        .leader-tag { border-color: var(--accent); color: #854d0e; background: #fefce8; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--primary);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 15px; padding: 25px; border-radius: 10px; }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; border-right: 3px solid var(--accent); padding-right: 10px; }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--primary);">Engineering Management 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مدير الهندسة البرمجية (EM)</h1>
+        <p>الانتقال من كتابة الكود إلى بناء الفرق، إدارة العمليات، وصناعة الاستراتيجيات التقنية</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>👥 إدارة الأفراد والقيادة</h2>
+                <span class="category-title">Team Development</span>
+                <div class="items-list">
+                    <div class="item leader-tag">Mentoring & Coaching</div>
+                    <div class="item">Performance Evaluations</div>
+                    <div class="item">Hiring & Recruitment</div>
+                </div>
+                <span class="category-title">Soft Skills</span>
+                <div class="items-list">
+                    <div class="item">Conflict Resolution</div>
+                    <div class="item">Feedback Delivery</div>
+                    <div class="item leader-tag">Emotional Intelligence</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🏗️ القيادة التقنية</h2>
+                <span class="category-title">Strategy</span>
+                <div class="items-list">
+                    <div class="item">System Design & Architecture</div>
+                    <div class="item">Technical Roadmapping</div>
+                    <div class="item leader-tag">Build vs Buy Evaluation</div>
+                </div>
+                <span class="category-title">Execution</span>
+                <div class="items-list">
+                    <div class="item">Code Review Best Practices</div>
+                    <div class="item">Incident Management</div>
+                    <div class="item">Technical Debt Management</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🔄 العمليات والتنفيذ</h2>
+                <span class="category-title">Agile & Projects</span>
+                <div class="items-list">
+                    <div class="item">Sprint Planning</div>
+                    <div class="item">Resource Allocation</div>
+                    <div class="item">Risk Management</div>
+                </div>
+                <span class="category-title">Measurement</span>
+                <div class="items-list">
+                    <div class="item leader-tag">Velocity Tracking</div>
+                    <div class="item">Team Health Metrics</div>
+                    <div class="item">KPI Definition</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>💼 الوعي التجاري</h2>
+                <span class="category-title">Business Alignment</span>
+                <div class="items-list">
+                    <div class="item">ROI Analysis</div>
+                    <div class="item">Stakeholder Management</div>
+                    <div class="item leader-tag">Budget Planning</div>
+                </div>
+                <span class="category-title">Communication</span>
+                <div class="items-list">
+                    <div class="item">Executive Summaries</div>
+                    <div class="item">Strategic Proposals</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 ميثاق ZRR لمدير الهندسة</h3>
+                <p>"نجاحك لا يقاس بعدد أسطر الكود التي تكتبها، بل بنجاح ونمو المهندسين الذين تقودهم". دورك هو إزالة العقبات من طريق فريقك لتمكينهم من الإبداع.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>ما الفرق بين الـ EM والـ Tech Lead؟</h4>
+                    <p>الـ Tech Lead يركز بشكل أساسي على "التنفيذ التقني" وجودة الكود، بينما الـ EM يركز على "الأفراد" ومسارهم المهني، وبناء الفريق، والربط مع أهداف الشركة العليا.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل يتوقف الـ EM عن كتابة الكود؟</h4>
+                    <p>غالباً نعم، أو يقلل منها جداً. تركيزه يتحول من "حل المشاكل التقنية" إلى "بناء فريق يحل المشاكل التقنية"، لكنه يجب أن يظل فاهماً للتقنيات ليأخذ قرارات صحيحة.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هي الـ 1:1 Meetings؟</h4>
+                    <p>هي اجتماعات دورية فردية بينك وبين كل مهندس في فريقك، هدفها ليس متابعة الشغل، بل الاطمئنان على حالة المهندس، وتطوير مهاراته، وسماع مشاكله وحلها.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

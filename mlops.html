@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار خبير MLOps 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8b5cf6; /* بنفسجي نيوني */
+            --secondary: #06b6d4; /* سماوي تقني */
+            --bg: #030712;
+            --card-bg: #111827;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #d946ef;
+            --header-gradient: linear-gradient(135deg, #1e1b4b 0%, #8b5cf6 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: rgba(17, 24, 39, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            border-bottom: 1px solid var(--primary);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            position: relative;
+        }
+        .section-card::before {
+            content: '⚙️'; position: absolute; top: 15px; left: 15px; font-size: 1.5rem; opacity: 0.3;
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: rgba(139, 92, 246, 0.05);
+            color: var(--text-main);
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .ml-tag { border-color: var(--accent); color: var(--accent); }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: linear-gradient(90deg, #111827, #1e1b4b);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid var(--primary);
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: var(--card-bg); margin-bottom: 15px; padding: 25px; border-radius: 12px; border-left: 4px solid var(--primary); }
+        .faq-item h4 { color: var(--secondary); margin-bottom: 10px; }
+
+        footer {
+            background: #020617;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+            border-top: 1px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--primary);">MLOps Pipeline 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار عمليات تعلم الآلة (MLOps)</h1>
+        <p>جسر التواصل بين تطوير النماذج (ML) وعمليات التشغيل (DevOps) لأتمتة ذكاء الأعمال</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🏗️ الأساسيات والبرمجة</h2>
+                <span class="category-title">Languages & Logic</span>
+                <div class="items-list">
+                    <div class="item">Python (Expert)</div>
+                    <div class="item">Bash Scripting</div>
+                    <div class="item">Math & Statistics</div>
+                </div>
+                <span class="category-title">Version Control</span>
+                <div class="items-list">
+                    <div class="item">Git / GitHub</div>
+                    <div class="item ml-tag">DVC (Data Version Control)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📊 هندسة البيانات</h2>
+                <span class="category-title">Data Pipelines</span>
+                <div class="items-list">
+                    <div class="item">Apache Airflow</div>
+                    <div class="item">Kafka / Flink</div>
+                    <div class="item">Spark (Big Data)</div>
+                </div>
+                <span class="category-title">Storage</span>
+                <div class="items-list">
+                    <div class="item">SQL & NoSQL</div>
+                    <div class="item">Data Lakes (S3 / Delta Lake)</div>
+                    <div class="item">Feature Stores</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🧠 النماذج والتدريب</h2>
+                <span class="category-title">Frameworks</span>
+                <div class="items-list">
+                    <div class="item ml-tag">PyTorch / TensorFlow</div>
+                    <div class="item">Scikit-learn</div>
+                </div>
+                <span class="category-title">Experiment Tracking</span>
+                <div class="items-list">
+                    <div class="item">MLflow</div>
+                    <div class="item">Weights & Biases (W&B)</div>
+                    <div class="item">KubeFlow</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 النشر والعمليات</h2>
+                <span class="category-title">Containerization</span>
+                <div class="items-list">
+                    <div class="item">Docker</div>
+                    <div class="item">Kubernetes (K8s)</div>
+                    <div class="item">Helm Charts</div>
+                </div>
+                <span class="category-title">Infrastructure as Code</span>
+                <div class="items-list">
+                    <div class="item">Terraform</div>
+                    <div class="item">Ansible</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>👁️ المراقبة والذكاء القابل للتفسير</h2>
+                <span class="category-title">Observability</span>
+                <div class="items-list">
+                    <div class="item">Prometheus / Grafana</div>
+                    <div class="item">Model Drift Detection</div>
+                </div>
+                <span class="category-title">Explainable AI (XAI)</span>
+                <div class="items-list">
+                    <div class="item ml-tag">SHAP / LIME</div>
+                    <div class="item">Model Fairness</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 رؤية ZRR لمستقبل الـ MLOps</h3>
+                <p>النموذج الذي لا يتم نشره ومراقبته هو مجرد تجربة معملية. القيمة الحقيقية تكمن في بناء "خطوط إنتاج" (Pipelines) قوية تضمن استمرار دقة الذكاء الاصطناعي مع تغير بيانات العالم الحقيقي.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--secondary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>ما هو الفرق بين الـ DevOps والـ MLOps؟</h4>
+                    <p>الـ DevOps يركز على دورة حياة الكود البرمجي، بينما الـ MLOps يركز على ثلاثة محاور معاً: الكود، البيانات، ونموذج تعلم الآلة (Model).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>لماذا نحتاج لـ DVC؟</h4>
+                    <p>لأن Git غير مصمم للتعامل مع ملفات البيانات الضخمة أو أوزان النماذج الكبيرة. DVC يسمح لك بعمل Versioning للبيانات بنفس سهولة الكود.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الـ Model Drift؟</h4>
+                    <p>هو انخفاض دقة النموذج بمرور الوقت لأن البيانات الحالية اختلفت عن البيانات التي تدرب عليها النموذج، وهنا يأتي دور مهندس الـ MLOps لإعادة التدريب تلقائياً.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

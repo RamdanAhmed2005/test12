@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مدير قواعد بيانات PostgreSQL | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #336791; /* لون PostgreSQL الرسمي */
+            --secondary: #213d54;
+            --bg: #f4f7f9;
+            --card-bg: #ffffff;
+            --text-main: #1a202c;
+            --text-muted: #4a5568;
+            --accent: #ed8936;
+            --header-gradient: linear-gradient(135deg, #213d54 0%, #336791 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #ebf8ff;
+            color: #2c5282;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #bee3f8;
+        }
+
+        .critical { background: #fff5f5; color: #c53030; border: 1px solid #fed7d7; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--secondary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">PostgreSQL DBA 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار خبير وقائد قواعد بيانات PostgreSQL</h1>
+        <p>إدارة، تأمين، وتوسيع أضخم قواعد البيانات العلائقية في العالم</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🧱 المفاهيم الأساسية (RDBMS)</h2>
+                <span class="category-title">Core Architecture</span>
+                <div class="items-list">
+                    <div class="item">ACID Properties</div>
+                    <div class="item">MVCC (Multi-Version Concurrency Control)</div>
+                    <div class="item">Write-ahead Log (WAL)</div>
+                    <div class="item">Transactions</div>
+                </div>
+                <span class="category-title">Postgres Model</span>
+                <div class="items-list">
+                    <div class="item">Schemas & Tablespaces</div>
+                    <div class="item">Object-Relational Model</div>
+                    <div class="item">Constraints & Data Types</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>⚙️ التثبيت ولغة SQL</h2>
+                <span class="category-title">Setup</span>
+                <div class="items-list">
+                    <div class="item">Docker / Package Managers</div>
+                    <div class="item">systemd / pg_ctl</div>
+                    <div class="item">Cloud Deployment</div>
+                </div>
+                <span class="category-title">Advanced SQL</span>
+                <div class="items-list">
+                    <div class="item">DML & DDL Queries</div>
+                    <div class="item">CTE & Lateral Joins</div>
+                    <div class="item">Recursive Queries</div>
+                    <div class="item">Window Functions</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🔐 الأمن وإدارة الوصول</h2>
+                <span class="category-title">Authentication</span>
+                <div class="items-list">
+                    <div class="item critical">pg_hba.conf</div>
+                    <div class="item critical">SSL Settings</div>
+                    <div class="item">Roles & Privileges</div>
+                </div>
+                <span class="category-title">Advanced Security</span>
+                <div class="items-list">
+                    <div class="item">Row-Level Security (RLS)</div>
+                    <div class="item">Default Privileges</div>
+                    <div class="item">Data Anonymization</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>💾 النسخ الاحتياطي والتوفر العالي</h2>
+                <span class="category-title">Replication</span>
+                <div class="items-list">
+                    <div class="item critical">Streaming Replication</div>
+                    <div class="item">Logical Replication</div>
+                    <div class="item">Patroni (Cluster Mgmt)</div>
+                </div>
+                <span class="category-title">Backup Tools</span>
+                <div class="items-list">
+                    <div class="item">pg_dump / pg_restore</div>
+                    <div class="item">pgbackrest</div>
+                    <div class="item">Barman / WAL-G</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 تحسين الأداء (Tuning)</h2>
+                <span class="category-title">Internal Tuning</span>
+                <div class="items-list">
+                    <div class="item">Vacuum & Autovacuum</div>
+                    <div class="item">Buffer Management</div>
+                    <div class="item">Index Optimization (B-Tree, GIN, BRIN)</div>
+                </div>
+                <span class="category-title">Troubleshooting</span>
+                <div class="items-list">
+                    <div class="item">EXPLAIN / EXPLAIN ANALYZE</div>
+                    <div class="item">pg_stat_statements</div>
+                    <div class="item">pgBadger (Log Analysis)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🤖 الأتمتة والتوسع</h2>
+                <span class="category-title">IaC & Config</span>
+                <div class="items-list">
+                    <div class="item">Ansible / Terraform</div>
+                    <div class="item">Kubernetes (Operators)</div>
+                </div>
+                <span class="category-title">Scaling</span>
+                <div class="items-list">
+                    <div class="item">PgBouncer (Pooling)</div>
+                    <div class="item">Data Partitioning</div>
+                    <div class="item">Sharding Patterns</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 نصيحة ZRR لمديري قواعد البيانات</h3>
+                <p>قاعدة البيانات هي قلب أي تطبيق. كـ DBA، وظيفتك الأولى هي "ألا تفقد البيانات أبداً". تأكد دائماً من صحة النسخ الاحتياطي (Backup Validation) قبل أن تفكر في تحسين السرعة.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>لماذا أختار PostgreSQL بدلاً من MySQL؟</h4>
+                    <p>Postgres تعتبر أكثر نضجاً في التعامل مع البيانات المعقدة، تدعم أنواع بيانات أكثر (مثل JSONB)، وتلتزم بمعايير SQL بشكل أدق، بالإضافة لمميزات الـ Extensibility الرهيبة.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الـ Vacuum ولماذا هو مهم؟</h4>
+                    <p>بسبب معمارية MVCC، بوسطجرس لا يمسح البيانات القديمة فوراً بل يضع عليها علامة. عملية الـ Vacuum هي المسؤولة عن تنظيف هذه البيانات وتفريغ المساحة لإعادة استخدامها.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل يجب أن أتعلم Linux كمدير قواعد بيانات؟</h4>
+                    <p>بكل تأكيد! أغلب خوادم بوسطجرس تعمل على Linux. تحتاج لفهم التعامل مع الذاكرة، القرص الصلب (I/O)، والشبكات لتستطيع ضبط أداء قاعدة البيانات بشكل احترافي.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

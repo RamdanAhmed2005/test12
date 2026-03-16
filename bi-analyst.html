@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار محلل BI 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a; /* كحلي تحليلي */
+            --secondary: #10b981; /* أخضر نمو */
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #3b82f6;
+            --header-gradient: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-bottom: 3px solid var(--secondary);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-title {
+            font-weight: 700;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #f1f5f9;
+            color: #1e3a8a;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+        }
+
+        .data-tag { border-color: var(--secondary); color: #065f46; background: #ecfdf5; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 2px solid var(--secondary);
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 15px; padding: 25px; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--primary);">BI Analyst Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار محلل ذكاء الأعمال (BI Analyst)</h1>
+        <p>تحويل البيانات الضخمة إلى رؤى استراتيجية تدعم اتخاذ القرار في المؤسسات</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>📊 الأساسيات والإحصاء</h2>
+                <span class="category-title">Data Types</span>
+                <div class="items-list">
+                    <div class="item">Structured vs Unstructured</div>
+                    <div class="item">Categorical vs Numerical</div>
+                </div>
+                <span class="category-title">Statistics</span>
+                <div class="items-list">
+                    <div class="item data-tag">Mean, Median, Mode</div>
+                    <div class="item">Correlation Analysis</div>
+                    <div class="item">Hypothesis Testing</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>💾 استخراج البيانات (SQL)</h2>
+                <span class="category-title">Databases</span>
+                <div class="items-list">
+                    <div class="item">PostgreSQL / MySQL</div>
+                    <div class="item">SQL Window Functions</div>
+                    <div class="item">Joins & Subqueries</div>
+                </div>
+                <span class="category-title">Architecture</span>
+                <div class="items-list">
+                    <div class="item data-tag">Star & Snowflake Schema</div>
+                    <div class="item">Data Warehousing</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📈 أدوات العرض والتحليل</h2>
+                <span class="category-title">Platforms</span>
+                <div class="items-list">
+                    <div class="item data-tag">Power BI (DAX)</div>
+                    <div class="item data-tag">Tableau</div>
+                    <div class="item">Looker / Qlik</div>
+                </div>
+                <span class="category-title">Visual Design</span>
+                <div class="items-list">
+                    <div class="item">Color Theory</div>
+                    <div class="item">Dashboard Design</div>
+                    <div class="item">Storytelling with Data</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 التحليل المتقدم</h2>
+                <span class="category-title">Python/R for BI</span>
+                <div class="items-list">
+                    <div class="item">Pandas / Numpy</div>
+                    <div class="item">Exploratory Data Analysis (EDA)</div>
+                </div>
+                <span class="category-title">Business Logic</span>
+                <div class="items-list">
+                    <div class="item data-tag">KPIs & Metrics</div>
+                    <div class="item">Predictive Analysis</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 نصيحة ZRR لمحللي البيانات</h3>
+                <p>"البيانات بدون سياق هي مجرد ضوضاء". وظيفتك ليست رسم رسوم بيانية جميلة فحسب، بل هي الإجابة على سؤال: "ماذا يجب أن نفعل الآن بناءً على هذه الأرقام؟"</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>ما الفرق بين الـ Data Analyst والـ BI Analyst؟</h4>
+                    <p>الـ Data Analyst يركز أكثر على "لماذا حدث هذا؟" واستكشاف البيانات بعمق، بينما الـ BI Analyst يركز على "ماذا يحدث الآن؟" وكيف يمكن عرض ذلك للإدارة لاتخاذ قرارات يومية واستراتيجية.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هي الـ Star Schema؟</h4>
+                    <p>هي طريقة لتنظيم جداول قاعدة البيانات تجعل الاستعلام عن البيانات (Querying) أسرع بكثير، حيث يتوسط جدول الحقائق (Fact Table) مجموعة من جداول الأبعاد (Dimension Tables).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل أحتاج لتعلم البرمجة؟</h4>
+                    <p>تحتاج بشكل أساسي لـ SQL. تعلم Python أو R يعتبر ميزة قوية جداً تمكنك من عمل تحليلات متقدمة ومعقدة لا تستطيع أدوات الـ BI التقليدية القيام بها بسهولة.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

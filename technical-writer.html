@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار الكاتب التقني 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb; /* أزرق كتابي */
+            --secondary: #64748b;
+            --bg: #fdfdfd;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #475569;
+            --accent: #0ea5e9;
+            --header-gradient: linear-gradient(135deg, #1e293b 0%, #2563eb 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.7; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--secondary);
+            font-size: 0.8rem;
+            margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #eff6ff;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #dbeafe;
+        }
+
+        .docs-tag { background: #f1f5f9; color: #334155; border: 1px solid #e2e8f0; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: #ffffff;
+            color: var(--text-main);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            border-right: 6px solid var(--primary);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 15px; padding: 20px; border-radius: 10px; border: 1px solid #eee; }
+        .faq-item h4 { color: var(--primary); margin-bottom: 8px; }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--secondary);">Technical Writing 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار الكاتب التقني (Technical Writer)</h1>
+        <p>اتقن فن تبسيط المعقد وصناعة التوثيق البرمجي والمنتجات التقنية</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>✍️ المهارات والأساسيات</h2>
+                <span class="category-title">Core Skills</span>
+                <div class="items-list">
+                    <div class="item">Language Proficiency</div>
+                    <div class="item">Written Communication</div>
+                    <div class="item">Technology Expertise</div>
+                    <div class="item">Storytelling</div>
+                </div>
+                <span class="category-title">Tools of the Trade</span>
+                <div class="items-list">
+                    <div class="item docs-tag">Git / Version Control</div>
+                    <div class="item docs-tag">Markdown</div>
+                    <div class="item">Editing Tools (Grammarly/Hemingway)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📄 أنواع المحتوى التقني</h2>
+                <span class="category-title">Developer Docs</span>
+                <div class="items-list">
+                    <div class="item">API Reference</div>
+                    <div class="item">How-to Guides</div>
+                    <div class="item">Release Notes</div>
+                    <div class="item">Troubleshooting</div>
+                </div>
+                <span class="category-title">Strategy</span>
+                <div class="items-list">
+                    <div class="item">Style Guides</div>
+                    <div class="item">User Persona Analysis</div>
+                    <div class="item">Docs Structure</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 التسويق التقني والسيو</h2>
+                <span class="category-title">Content SEO</span>
+                <div class="items-list">
+                    <div class="item">Keyword Research</div>
+                    <div class="item">Pillar Content</div>
+                    <div class="item">Backlinking</div>
+                </div>
+                <span class="category-title">The Funnel</span>
+                <div class="items-list">
+                    <div class="item docs-tag">Top-funnel (Blog Posts)</div>
+                    <div class="item docs-tag">Mid-funnel (Whitepapers)</div>
+                    <div class="item docs-tag">Bottom-funnel (Tutorials)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🔍 البحث والتحسين</h2>
+                <span class="category-title">Research Tools</span>
+                <div class="items-list">
+                    <div class="item">Google Trends</div>
+                    <div class="item">Search Analytics</div>
+                    <div class="item">Community Forums</div>
+                </div>
+                <span class="category-title">Optimization</span>
+                <div class="items-list">
+                    <div class="item">Content Analysis</div>
+                    <div class="item">Conversion Tracking</div>
+                    <div class="item">OpenGraph Data</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 قاعدة ZRR الذهبية للكتابة التقنية</h3>
+                <p>"اكتب للمستخدم، وليس لنفسك". الكاتب التقني العظيم هو من يستطيع شرح أصعب مفهوم برمجي لطفل في الخامسة، دون أن يفقد المعنى التقني الدقيق.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>هل يجب أن أكون مبرمجاً لأعمل ككاتب تقني؟</h4>
+                    <p>ليس بالضرورة أن تكون مبرمجاً محترفاً، ولكن يجب أن تفهم الأساسيات البرمجية بشكل جيد جداً لتستطيع شرحها للآخرين وتجربة الأكواد التي توثقها.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الـ Markdown؟</h4>
+                    <p>هي لغة توصيف بسيطة جداً تستخدم لكتابة النصوص وتنسيقها بسهولة، وهي المعيار العالمي لكتابة ملفات الـ README والتوثيق البرمجي على GitHub.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>أين أجد فرص عمل في هذا المجال؟</h4>
+                    <p>شركات التقنية الكبرى (Google, AWS, Microsoft) تطلب دائماً كتاباً تقنيين، بالإضافة لشركات الـ Open Source والمشاريع الناشئة التي تهتم بجودة توثيق منتجاتها.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مطور بلوكتشين 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8b5cf6; /* بنفسجي بلوكتشين */
+            --secondary: #1e1b4b; /* كحلي غامق */
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #22d3ee; /* نيون بلو */
+            --header-gradient: linear-gradient(135deg, #1e1b4b 0%, #8b5cf6 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--accent); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; text-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(139, 92, 246, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .section-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-title {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--text-main);
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .crypto-tag { border-color: var(--accent); color: var(--accent); }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: linear-gradient(90deg, #1e1b4b, #312e81);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid var(--primary);
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: var(--card-bg); margin-bottom: 15px; padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); }
+        .faq-item h4 { color: var(--accent); margin-bottom: 10px; }
+
+        footer {
+            background: #020617;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+            border-top: 1px solid rgba(139, 92, 246, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">Blockchain Dev 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مطور بلوكتشين (Web3)</h1>
+        <p>اقتحم عالم اللامركزية، العقود الذكية، وتطبيقات الـ dApps لعام 2026</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🌐 الأساسيات والعملات</h2>
+                <span class="category-title">Understanding Basics</span>
+                <div class="items-list">
+                    <div class="item">Decentralization</div>
+                    <div class="item">Cryptography & Hashing</div>
+                    <div class="item">Consensus (PoW, PoS, PoH)</div>
+                    <div class="item">Mining & Incentives</div>
+                </div>
+                <span class="category-title">Assets</span>
+                <div class="items-list">
+                    <div class="item crypto-tag">Cryptocurrencies</div>
+                    <div class="item crypto-tag">Crypto Wallets</div>
+                    <div class="item">Blockchain Forking</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>⛓️ الشبكات والأنظمة</h2>
+                <span class="category-title">EVM-Based</span>
+                <div class="items-list">
+                    <div class="item">Ethereum</div>
+                    <div class="item">Polygon</div>
+                    <div class="item">Avalanche</div>
+                    <div class="item">BNB Chain</div>
+                </div>
+                <span class="category-title">Non-EVM & L2</span>
+                <div class="items-list">
+                    <div class="item crypto-tag">Solana (Rust)</div>
+                    <div class="item">Arbitrum / Optimism</div>
+                    <div class="item">Starknet (Zk-Rollups)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📜 العقود الذكية (Smart Contracts)</h2>
+                <span class="category-title">Languages</span>
+                <div class="items-list">
+                    <div class="item crypto-tag">Solidity (Primary)</div>
+                    <div class="item">Rust (for Solana)</div>
+                    <div class="item">Vyper</div>
+                </div>
+                <span class="category-title">Frameworks</span>
+                <div class="items-list">
+                    <div class="item">Hardhat</div>
+                    <div class="item">Foundry</div>
+                    <div class="item">Truffle / Brownie</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📱 التطبيقات اللامركزية (dApps)</h2>
+                <span class="category-title">Frontend Integration</span>
+                <div class="items-list">
+                    <div class="item">React / Next.js</div>
+                    <div class="item crypto-tag">Ethers.js / Web3.js</div>
+                    <div class="item">Moralis</div>
+                </div>
+                <span class="category-title">Storage & Oracles</span>
+                <div class="items-list">
+                    <div class="item">IPFS (Decentralized Storage)</div>
+                    <div class="item">Chainlink (Oracles)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🔒 الأمان والتوسع</h2>
+                <span class="category-title">Security Practices</span>
+                <div class="items-list">
+                    <div class="item">OpenZeppelin Standards</div>
+                    <div class="item">Fuzz Testing (Echidna)</div>
+                    <div class="item">Slither (Static Analysis)</div>
+                </div>
+                <span class="category-title">Scaling Solutions</span>
+                <div class="items-list">
+                    <div class="item">Zk-Rollups</div>
+                    <div class="item">Sidechains</div>
+                    <div class="item">State Channels</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 نصيحة ZRR لمطوري الـ Web3</h3>
+                <p>في البلوكتشين، "الكود هو القانون" (Code is Law). بمجرد رفع العقد الذكي لا يمكن تعديله بسهولة، لذا فإن الأمان واختبار الكود (Testing) ليس رفاهية، بل هو أهم خطوة في مشروعك.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>هل يجب أن أتعلم بايثون أم جافا سكريبت؟</h4>
+                    <p>جافا سكريبت ضرورية جداً لبناء الواجهات والتعامل مع المكتبات مثل Ethers.js. أما بايثون فهي مفيدة في التحليل وبعض أطر العمل مثل Brownie. البداية بـ JS هي الأفضل.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هي لغة Solidity؟</h4>
+                    <p>هي اللغة الأشهر لبناء العقود الذكية على شبكة إيثيريوم وأي شبكة تدعم الـ EVM. قواعدها تشبه الجافا سكريبت لكنها مخصصة للتعامل مع العملات والبيانات الحساسة.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>كيف أحصل على عملات للاختبار؟</h4>
+                    <p>تستخدم ما يسمى بالـ "Faucets" أو الصنابير، وهي مواقع تعطيك عملات وهمية مجانية لشبكات الاختبار (Testnets) مثل Sepolia لتجربة عقودك قبل دفع رسوم حقيقية.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مطور الألعاب 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #f97316; /* برتقالي ناري */
+            --secondary: #fbbf24; 
+            --bg: #09090b;
+            --card-bg: #18181b;
+            --text-main: #fafafa;
+            --text-muted: #a1a1aa;
+            --accent: #ef4444;
+            --header-gradient: linear-gradient(135deg, #09090b 0%, #f97316 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: rgba(24, 24, 27, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            border-bottom: 2px solid var(--primary);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: white; }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .hero-mini h1 { font-size: 3rem; margin-bottom: 10px; font-weight: 900; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(249, 115, 22, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .section-card::before {
+            content: '🎮'; position: absolute; top: -10px; left: -10px; font-size: 4rem; opacity: 0.05; transform: rotate(-20deg);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: rgba(249, 115, 22, 0.1);
+            color: var(--text-main);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(249, 115, 22, 0.3);
+        }
+
+        .engine-tag { border-color: #ef4444; color: #ef4444; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: linear-gradient(90deg, #18181b, #7c2d12);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid var(--primary);
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: var(--card-bg); margin-bottom: 15px; padding: 25px; border-radius: 15px; border-right: 4px solid var(--primary); }
+        .faq-item h4 { color: var(--secondary); margin-bottom: 10px; }
+
+        footer {
+            background: #000;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+            border-top: 2px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--primary);">Game Dev Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مطور الألعاب (Game Dev)</h1>
+        <p>من الرياضيات والفيزياء إلى بناء محركات الألعاب وعوالم الـ 3D المذهلة</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>📐 الرياضيات والفيزياء</h2>
+                <span class="category-title">Mathematics</span>
+                <div class="items-list">
+                    <div class="item">Linear Algebra</div>
+                    <div class="item">Vectors & Matrices</div>
+                    <div class="item">Quaternions</div>
+                    <div class="item">Bezier Curves</div>
+                </div>
+                <span class="category-title">Physics</span>
+                <div class="items-list">
+                    <div class="item">Dynamics & Acceleration</div>
+                    <div class="item">Collision Detection</div>
+                    <div class="item">Friction & Buoyancy</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 محركات الألعاب واللغات</h2>
+                <span class="category-title">Popular Engines</span>
+                <div class="items-list">
+                    <div class="item engine-tag">Unreal Engine (C++)</div>
+                    <div class="item engine-tag">Unity 3D (C#)</div>
+                    <div class="item engine-tag">Godot (GDScript/Rust)</div>
+                </div>
+                <span class="category-title">Languages</span>
+                <div class="items-list">
+                    <div class="item">C++ / C#</div>
+                    <div class="item">Python</div>
+                    <div class="item">Rust</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🎨 الجرافيكس والرندر</h2>
+                <span class="category-title">Rendering</span>
+                <div class="items-list">
+                    <div class="item">Ray Tracing</div>
+                    <div class="item">Rasterization</div>
+                    <div class="item">PBR (Physically Based Rendering)</div>
+                </div>
+                <span class="category-title">APIs & Shaders</span>
+                <div class="items-list">
+                    <div class="item">DirectX / Vulkan / OpenGL</div>
+                    <div class="item">HLSL / GLSL Shaders</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🤖 ذكاء الألعاب الاصطناعي</h2>
+                <span class="category-title">Decision Making</span>
+                <div class="items-list">
+                    <div class="item">State Machines (FSM)</div>
+                    <div class="item">Behavior Trees</div>
+                    <div class="item">Pathfinding (A*)</div>
+                </div>
+                <span class="category-title">Advanced AI</span>
+                <div class="items-list">
+                    <div class="item">Deep Learning</div>
+                    <div class="item">Reinforcement Learning</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>💡 الإضاءة والتحريك</h2>
+                <span class="category-title">Visuals</span>
+                <div class="items-list">
+                    <div class="item">Shadow Mapping</div>
+                    <div class="item">Global Illumination</div>
+                    <div class="item">Inverse Kinematics (IK)</div>
+                </div>
+                <span class="category-title">VFX</span>
+                <div class="items-list">
+                    <div class="item">Particle Systems</div>
+                    <div class="item">Tone Reproduction</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 نصيحة ZRR لمطوري الألعاب</h3>
+                <p>لا تبدأ ببناء "لعبة أحلامك" الضخمة فوراً. ابدأ بألعاب بسيطة مثل Pong أو Flappy Bird لتفهم دورة حياة اللعبة (Game Loop)، ثم تدرج للألعاب الأكثر تعقيداً.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>أي محرك ألعاب أختار؟</h4>
+                    <p>إذا كنت تريد أقصى قوة جرافيكس وألعاب AAA، توجه لـ Unreal Engine. إذا كنت تريد سهولة وتطوير ألعاب موبايل و 2D/3D متنوعة، فـ Unity هو الأنسب. أما Godot فهو رائع للمشاريع مفتوحة المصدر.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل يجب أن أكون عبقرياً في الرياضيات؟</h4>
+                    <p>تحتاج لفهم أساسيات المتجهات والمصفوفات (Vectors & Matrices) لأنها أساس حركة الأجسام في فضاء اللعبة، لكن المحركات الحديثة تسهل الكثير من العمليات الحسابية المعقدة.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الـ Ray Tracing؟</h4>
+                    <p>هي تقنية لمحاكاة سلوك الضوء الفيزيائي الحقيقي في اللعبة، مما ينتج عنه انعكاسات وظلال واقعية جداً، وهي الصيحة الأهم في ألعاب 2026.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

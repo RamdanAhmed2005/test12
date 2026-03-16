@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مطور iOS المحترف | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0071e3; /* لون أبل الرسمي */
+            --secondary: #86868b;
+            --bg: #f5f5f7;
+            --card-bg: rgba(255, 255, 255, 0.8);
+            --text-main: #1d1d1f;
+            --text-muted: #6e6e73;
+            --accent: #af52de; /* بنفسجي Swift */
+            --header-gradient: linear-gradient(135deg, #1d1d1f 0%, #0071e3 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--text-main); text-decoration: none; }
+        .logo span { color: var(--primary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.8rem; margin-bottom: 10px; font-weight: 900; letter-spacing: -1px; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .section-card h2 {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .category-title {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.9rem;
+            margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .item {
+            background: #ffffff;
+            color: #1d1d1f;
+            padding: 6px 14px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .swift-tag { background: #f0f6ff; color: #0071e3; border: 1px solid #cce3ff; }
+        .modern-tag { background: #f5f0ff; color: #af52de; border: 1px solid #e8d5ff; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: #ffffff;
+            color: var(--text-main);
+            padding: 40px;
+            border-radius: 30px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            border: 1px solid var(--primary);
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 15px; padding: 25px; border-radius: 20px; border: 1px solid #eee; }
+        .faq-item h4 { color: var(--primary); margin-bottom: 8px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: #1d1d1f;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: 600; color: var(--text-muted);">iOS Expert Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مطور تطبيقات iOS</h1>
+        <p>ابتكر تجارب مذهلة لأجهزة iPhone و iPad باستخدام لغة Swift وأحدث تقنيات أبل</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🍎 اللغة وبيئة التطوير</h2>
+                <span class="category-title">Programming Language</span>
+                <div class="items-list">
+                    <div class="item swift-tag">Swift (Primary)</div>
+                    <div class="item">Objective-C (Legacy)</div>
+                    <div class="item">Interoperability</div>
+                </div>
+                <span class="category-title">Development Environment</span>
+                <div class="items-list">
+                    <div class="item">Xcode Mastery</div>
+                    <div class="item">Instruments & Debugger</div>
+                    <div class="item">Swift Package Manager</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🎨 بناء الواجهات</h2>
+                <span class="category-title">Modern Approach</span>
+                <div class="items-list">
+                    <div class="item modern-tag">SwiftUI (Declarative)</div>
+                    <div class="item modern-tag">State & Data Binding</div>
+                    <div class="item">NavigationStack</div>
+                </div>
+                <span class="category-title">Classic Approach</span>
+                <div class="items-list">
+                    <div class="item">UIKit (Imperative)</div>
+                    <div class="item">Auto Layout</div>
+                    <div class="item">Storyboards & Xibs</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📐 المعمارية والأنماط</h2>
+                <span class="category-title">Design Patterns</span>
+                <div class="items-list">
+                    <div class="item modern-tag">MVVM (Recommended)</div>
+                    <div class="item">VIPER / TCA</div>
+                    <div class="item">Delegate Pattern</div>
+                    <div class="item">Closures</div>
+                </div>
+                <span class="category-title">Reactive Programming</span>
+                <div class="items-list">
+                    <div class="item modern-tag">Combine Framework</div>
+                    <div class="item">RxSwift</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🌐 البيانات والربط الشبكي</h2>
+                <span class="category-title">Persistence</span>
+                <div class="items-list">
+                    <div class="item swift-tag">Core Data</div>
+                    <div class="item">SwiftData (New)</div>
+                    <div class="item">Keychain (Security)</div>
+                    <div class="item">UserDefaults</div>
+                </div>
+                <span class="category-title">Networking</span>
+                <div class="items-list">
+                    <div class="item">URLSession</div>
+                    <div class="item">Alamofire</div>
+                    <div class="item">JSON / Codable</div>
+                    <div class="item modern-tag">Async / Await</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 التقنيات المتقدمة</h2>
+                <span class="category-title">Apple Ecosystem</span>
+                <div class="items-list">
+                    <div class="item">MapKit & Core Location</div>
+                    <div class="item">Core ML (AI)</div>
+                    <div class="item">ARKit (Augmented Reality)</div>
+                    <div class="item">HealthKit</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 فلسفة ZRR لمطوري الـ iOS</h3>
+                <p>مطور الـ iOS ليس مجرد مبرمج، بل هو "مصمم تجربة". أبل تهتم بالتفاصيل الصغيرة؛ لذا يجب أن يكون كودك نظيفاً، وواجهتك تلتزم بـ (HIG - Human Interface Guidelines).</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center;">أسئلة شائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>هل أحتاج لجهاز Mac لتعلم iOS؟</h4>
+                    <p>نعم، نظام macOS وبرنامج Xcode ضروريان لبناء ورفع التطبيقات لمتجر أبل. يمكنك استخدام Mac Mini كخيار اقتصادي للبداية.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الفرق بين SwiftUI و UIKit؟</h4>
+                    <p>SwiftUI هي الطريقة الحديثة والسهلة لكتابة الواجهات بالكود (Declarative)، أما UIKit فهي الطريقة التقليدية التي تمنحك تحكماً أدق في التفاصيل المعقدة جداً.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>كيف أنشر تطبيقي على الـ App Store؟</h4>
+                    <p>يجب عليك الاشتراك في برنامج مطوري أبل (Apple Developer Program) بتكلفة 99$ سنوياً لتتمكن من رفع تطبيقاتك للمتجر.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

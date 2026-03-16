@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار خبير الأمن السيبراني 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #10b981; /* أخضر سيبراني */
+            --secondary: #064e3b; 
+            --bg: #020617;
+            --card-bg: #0f172a;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #ef4444; /* أحمر للتنبيهات */
+            --header-gradient: linear-gradient(135deg, #020617 0%, #064e3b 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            border-bottom: 1px solid var(--primary);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: white; }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            border-bottom: 2px solid var(--primary);
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            position: relative;
+        }
+        .section-card::before {
+            content: '>_'; position: absolute; top: 15px; left: 15px; color: var(--primary); font-weight: bold; opacity: 0.5;
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-right: 25px;
+            border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+        }
+
+        .category-title {
+            font-weight: 700;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: rgba(16, 185, 129, 0.05);
+            color: var(--primary);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: 'Courier New', monospace;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .hacker-tag { border-color: var(--accent); color: var(--accent); background: rgba(239, 68, 68, 0.05); }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: #064e3b;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 1px dashed var(--primary);
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: var(--card-bg); margin-bottom: 15px; padding: 25px; border-radius: 15px; border-left: 4px solid var(--primary); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; }
+
+        footer {
+            background: #020617;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+            border-top: 1px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--primary);">System Status: SECURE</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار خبير الأمن السيبراني</h1>
+        <p>تعلم فنون الدفاع، الاختراق الأخلاقي، وحماية البنية التحتية الرقمية لعام 2026</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🛠️ الأساسيات والأنظمة</h2>
+                <span class="category-title">Networking & OS</span>
+                <div class="items-list">
+                    <div class="item">OSI Model</div>
+                    <div class="item">TCP/IP Protocols</div>
+                    <div class="item">Linux CLI (Kali/Parrot)</div>
+                    <div class="item">Windows Hardening</div>
+                </div>
+                <span class="category-title">Infrastructure</span>
+                <div class="items-list">
+                    <div class="item">Virtualization (VMWare/ESXi)</div>
+                    <div class="item">Subnetting & VLANs</div>
+                    <div class="item">Public/Private IP</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🛡️ المهارات الأمنية الأساسية</h2>
+                <span class="category-title">Core Concepts</span>
+                <div class="items-list">
+                    <div class="item">CIA Triad</div>
+                    <div class="item">Cryptography (Hashing/PKI)</div>
+                    <div class="item">Zero Trust Architecture</div>
+                </div>
+                <span class="category-title">Defense Mechanisms</span>
+                <div class="items-list">
+                    <div class="item">Firewalls & IDS/IPS</div>
+                    <div class="item">SIEM & SOAR</div>
+                    <div class="item">Endpoint Security (EDR)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>⚔️ الهجوم والاختبار</h2>
+                <span class="category-title">Common Attacks</span>
+                <div class="items-list">
+                    <div class="item hacker-tag">OWASP Top 10</div>
+                    <div class="item hacker-tag">SQL Injection / XSS</div>
+                    <div class="item hacker-tag">Social Engineering</div>
+                </div>
+                <span class="category-title">Tools & Hacking</span>
+                <div class="items-list">
+                    <div class="item">Nmap / Wireshark</div>
+                    <div class="item">Metasploit Framework</div>
+                    <div class="item">Burp Suite</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚨 الاستجابة للحوادث</h2>
+                <span class="category-title">Process</span>
+                <div class="items-list">
+                    <div class="item">Preparation</div>
+                    <div class="item">Containment</div>
+                    <div class="item">Eradication & Recovery</div>
+                </div>
+                <span class="category-title">Analysis</span>
+                <div class="items-list">
+                    <div class="item">Digital Forensics</div>
+                    <div class="item">Malware Analysis</div>
+                    <div class="item">Threat Hunting</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>☁️ أمن السحابة والأتمتة</h2>
+                <span class="category-title">Cloud Models</span>
+                <div class="items-list">
+                    <div class="item">AWS / Azure / GCP Security</div>
+                    <div class="item">IaaS / PaaS / SaaS</div>
+                </div>
+                <span class="category-title">Programming</span>
+                <div class="items-list">
+                    <div class="item">Python (Scripting)</div>
+                    <div class="item">Bash / PowerShell</div>
+                    <div class="item">Go (for exploits)</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 عقلية الـ Hacker في ZRR</h3>
+                <p>لتكون مدافعاً قوياً، يجب أن تفكر كالمهاجم. تذكر دائماً: الأمن ليس منتجاً تشتريه، بل هو عملية مستمرة (Security is a process, not a product).</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>كيف أبدأ في مجال الـ Cyber Security؟</h4>
+                    <p>ابدأ بفهم الشبكات (Network+) وأنظمة التشغيل (Linux) بشكل ممتاز. بدون هذه الأساسيات، لن تستطيع فهم كيف تتم عمليات الاختراق أو الحماية.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هي أشهر الشهادات للمبتدئين؟</h4>
+                    <p>تعتبر شهادات CompTIA (A+, Network+, Security+) هي المدخل الأفضل، تليها شهادة الـ EJPT للاختبار العملي و OSCP للمحترفين.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الفرق بين الـ Red Team والـ Blue Team؟</h4>
+                    <p>الـ Red Team هم المهاجمون الذين يحاولون اختراق النظام لاكتشاف الثغرات، أما الـ Blue Team هم المدافعون الذين يراقبون ويحمون النظام من أي هجوم.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

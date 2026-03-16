@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مهندس البيانات الشامل | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0ea5e9; /* أزرق سماوي للهندسة */
+            --secondary: #334155; /* رمادي غامق للبنية التحتية */
+            --bg: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #f43f5e;
+            --header-gradient: linear-gradient(135deg, #0c4a6e 0%, #0ea5e9 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-right: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .infra-tool { background: #334155; color: #f1f5f9; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--secondary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: var(--text-main);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">Data Engineer Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مهندس البيانات (Data Engineer)</h1>
+        <p>تصميم وبناء وصيانة أنظمة معالجة البيانات الضخمة (Big Data Pipelines)</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🛠️ الأساسيات والبرمجة</h2>
+                <span class="category-title">Programming</span>
+                <div class="items-list">
+                    <div class="item">Python (Recommended)</div>
+                    <div class="item">Java / Scala</div>
+                    <div class="item">Go</div>
+                </div>
+                <span class="category-title">System Skills</span>
+                <div class="items-list">
+                    <div class="item">Linux Basics</div>
+                    <div class="item">Data Structures</div>
+                    <div class="item">Networking Fundamentals</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🗄️ قواعد البيانات والتخزين</h2>
+                <span class="category-title">Relational (SQL)</span>
+                <div class="items-list">
+                    <div class="item">PostgreSQL</div>
+                    <div class="item">MySQL</div>
+                    <div class="item">Normalization / Modeling</div>
+                </div>
+                <span class="category-title">NoSQL</span>
+                <div class="items-list">
+                    <div class="item">MongoDB (Document)</div>
+                    <div class="item">Redis (Key-Value)</div>
+                    <div class="item">Cassandra (Column)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🏗️ مستودعات البيانات والبيانات الضخمة</h2>
+                <span class="category-title">Data Warehouse</span>
+                <div class="items-list">
+                    <div class="item infra-tool">Snowflake</div>
+                    <div class="item infra-tool">Google BigQuery</div>
+                    <div class="item infra-tool">Amazon Redshift</div>
+                </div>
+                <span class="category-title">Big Data Tools</span>
+                <div class="items-list">
+                    <div class="item">Apache Spark</div>
+                    <div class="item">Hadoop (HDFS/YARN)</div>
+                    <div class="item">Kafka (Streaming)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 تدفق البيانات (ETL/ELT)</h2>
+                <span class="category-title">Orchestration</span>
+                <div class="items-list">
+                    <div class="item infra-tool">Apache Airflow</div>
+                    <div class="item">dbt (Data Build Tool)</div>
+                    <div class="item">Prefect</div>
+                </div>
+                <span class="category-title">Ingestion Types</span>
+                <div class="items-list">
+                    <div class="item">Batch Processing</div>
+                    <div class="item">Real-time Streaming</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>☁️ السحابة والبنية التحتية</h2>
+                <span class="category-title">Cloud Providers</span>
+                <div class="items-list">
+                    <div class="item">AWS (S3, Glue, RDS)</div>
+                    <div class="item">Google Cloud (GCS, Dataflow)</div>
+                    <div class="item">Azure (Data Factory)</div>
+                </div>
+                <span class="category-title">Infrastructure as Code</span>
+                <div class="items-list">
+                    <div class="item infra-tool">Terraform</div>
+                    <div class="item infra-tool">Docker & Kubernetes</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 نصيحة ZRR لمهندسي البيانات</h3>
+                <p>عالم البيانات يحتاج للبيانات، لكنك أنت من يوفرها له بجودة عالية وسرعة فائقة. ركز على إتقان الـ SQL والـ Distributed Systems لأنهم حجر الأساس.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>ما هو الـ ETL والـ ELT؟</h4>
+                    <p>ETL تعني (Extract, Transform, Load) وهي سحب البيانات ومعالجتها قبل تخزينها. أما ELT فهي تخزين البيانات الخام أولاً ثم معالجتها داخل مستودع البيانات، وهي الطريقة الأحدث والأكثر شيوعاً الآن.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما الفرق بين مهندس البيانات وعالم البيانات؟</h4>
+                    <p>مهندس البيانات يركز على "البناء": إعداد قواعد البيانات وخطوط سير البيانات. عالم البيانات يركز على "التحليل": استخدام تلك البيانات لبناء نماذج ذكاء اصطناعي وتوقعات.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل يجب أن أتعلم Java أم Python؟</h4>
+                    <p>بايثون هي الأكثر طلباً وسهولة في مجال البيانات حالياً، لكن جافا وسكالا مهمان جداً إذا كنت ستعمل بعمق مع أدوات مثل Apache Spark أو أنظمة البيانات الضخمة المعقدة.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

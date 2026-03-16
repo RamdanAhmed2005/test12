@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مهندس جودة البرمجيات 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #f59e0b; /* أصفر ذهبي للجودة */
+            --secondary: #1e293b; /* رمادي داكن احترافي */
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #10b981; /* أخضر للنجاح */
+            --header-gradient: linear-gradient(135deg, #1e293b 0%, #f59e0b 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--primary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #fffbeb;
+            color: #92400e;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #fef3c7;
+        }
+
+        .auto-tag { background: #ecfdf5; color: #065f46; border: 1px solid #d1fae5; }
+        .critical-tag { background: #fef2f2; color: #991b1b; border: 1px solid #fee2e2; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--secondary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">QA Engineer Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مهندس جودة البرمجيات (QA)</h1>
+        <p>تعلم كيفية ضمان كفاءة الأنظمة وتطوير استراتيجيات الاختبار الآلي واليدوي</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>📚 أساسيات الجودة</h2>
+                <span class="category-title">Testing Types</span>
+                <div class="items-list">
+                    <div class="item">Manual Testing</div>
+                    <div class="item">Black/White/Gray Box</div>
+                    <div class="item">SDLC & STLC</div>
+                </div>
+                <span class="category-title">Levels of Testing</span>
+                <div class="items-list">
+                    <div class="item critical-tag">Unit Testing</div>
+                    <div class="item critical-tag">Integration Testing</div>
+                    <div class="item">Regression Testing</div>
+                    <div class="item">Smoke & Sanity</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>💻 المهارات التقنية</h2>
+                <span class="category-title">Web Basics</span>
+                <div class="items-list">
+                    <div class="item">HTML / CSS / JS</div>
+                    <div class="item">Browser DevTools</div>
+                    <div class="item">HTTP / APIs</div>
+                </div>
+                <span class="category-title">Tools</span>
+                <div class="items-list">
+                    <div class="item">Postman (API Testing)</div>
+                    <div class="item">Git & GitHub</div>
+                    <div class="item">Jira / Trello</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🤖 أتمتة الاختبارات (Automation)</h2>
+                <span class="category-title">Frontend Automation</span>
+                <div class="items-list">
+                    <div class="item auto-tag">Playwright (Modern)</div>
+                    <div class="item auto-tag">Cypress</div>
+                    <div class="item">Selenium</div>
+                </div>
+                <span class="category-title">Mobile & Backend</span>
+                <div class="items-list">
+                    <div class="item">Appium (Mobile)</div>
+                    <div class="item">Rest Assured (Backend)</div>
+                    <div class="item">Jest / Mocha</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>⚡ الأداء والأمن</h2>
+                <span class="category-title">Non-Functional</span>
+                <div class="items-list">
+                    <div class="item">JMeter (Load Testing)</div>
+                    <div class="item">K6 / Locust</div>
+                    <div class="item">Lighthouse</div>
+                </div>
+                <span class="category-title">Security</span>
+                <div class="items-list">
+                    <div class="item critical-tag">OWASP Top 10</div>
+                    <div class="item">Vulnerability Scanning</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 التكامل والنشر المستمر</h2>
+                <span class="category-title">CI/CD Pipeline</span>
+                <div class="items-list">
+                    <div class="item auto-tag">GitHub Actions</div>
+                    <div class="item">Jenkins</div>
+                    <div class="item">Azure DevOps</div>
+                </div>
+                <span class="category-title">Reporting & Monitoring</span>
+                <div class="items-list">
+                    <div class="item">Allure Reports</div>
+                    <div class="item">Sentry</div>
+                    <div class="item">Grafana</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 عقلية مهندس الـ QA في ZRR</h3>
+                <p>مهندس الـ QA الناجح لا يبحث فقط عن الـ Bugs، بل يسعى لمنعها قبل حدوثها. التفكير التحليلي والاهتمام بأدق التفاصيل هو سلاحك الأقوى في هذا المجال.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>هل يجب أن أتعلم البرمجة لأكون QA؟</h4>
+                    <p>في 2026، الإجابة هي نعم. بينما يمكنك البدء كـ Manual Tester، إلا أن الـ Automation هو المطلوب بكثرة، وهذا يتطلب مهارات برمجة (JavaScript أو Python غالباً).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الفرق بين الـ QA والـ QC؟</h4>
+                    <p>الـ QA (Quality Assurance) يركز على "العمليات" لمنع حدوث الأخطاء، بينما الـ QC (Quality Control) يركز على "المنتج" النهائي لاكتشاف الأخطاء وتصحيحها.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>أي أداة أتمتة أبدأ بها؟</h4>
+                    <p>نحن ننصح بـ Playwright حالياً لأنها الأسرع والأكثر توافقاً مع تطبيقات الويب الحديثة، تليها Cypress لسهولة استخدامها.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

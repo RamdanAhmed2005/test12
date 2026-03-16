@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مهندس تعلم الآلة | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb; /* أزرق تقني */
+            --secondary: #1e293b; /* رمادي داكن */
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent: #38bdf8;
+            --header-gradient: linear-gradient(135deg, #1e293b 0%, #2563eb 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            border-top: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--primary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+            opacity: 0.8;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #f1f5f9;
+            color: #334155;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+        }
+
+        .math-tag { background: #fee2e2; color: #991b1b; }
+        .code-tag { background: #dcfce7; color: #166534; }
+        .deep-tag { background: #e0f2fe; color: #075985; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--secondary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">ML Engineer Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مهندس تعلم الآلة (ML Engineer)</h1>
+        <p>تعلم كيف تبني، تدرب، وتنشر نماذج الذكاء الاصطناعي في بيئات الإنتاج الحقيقية</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>📐 الأساسيات الرياضية</h2>
+                <span class="category-title">Linear Algebra & Calculus</span>
+                <div class="items-list">
+                    <div class="item math-tag">Matrix Operations</div>
+                    <div class="item math-tag">Eigenvalues</div>
+                    <div class="item math-tag">Partial Derivatives</div>
+                    <div class="item">Gradients & Jacobians</div>
+                </div>
+                <span class="category-title">Statistics & Probability</span>
+                <div class="items-list">
+                    <div class="item math-tag">Bayes Theorem</div>
+                    <div class="item">Distributions (Normal, PDF)</div>
+                    <div class="item">Inferential Statistics</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🐍 البرمجة والأدوات</h2>
+                <span class="category-title">Python Stack</span>
+                <div class="items-list">
+                    <div class="item code-tag">NumPy</div>
+                    <div class="item code-tag">Pandas</div>
+                    <div class="item code-tag">Matplotlib / Seaborn</div>
+                    <div class="item">OOP in Python</div>
+                </div>
+                <span class="category-title">Data Handling</span>
+                <div class="items-list">
+                    <div class="item">SQL / NoSQL</div>
+                    <div class="item">Data Cleaning</div>
+                    <div class="item">Feature Engineering</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🤖 تعلم الآلة الكلاسيكي</h2>
+                <span class="category-title">Supervised Learning</span>
+                <div class="items-list">
+                    <div class="item">Linear & Logistic Regression</div>
+                    <div class="item">Decision Trees & Random Forest</div>
+                    <div class="item">SVM & KNN</div>
+                    <div class="item">Gradient Boosting</div>
+                </div>
+                <span class="category-title">Unsupervised Learning</span>
+                <div class="items-list">
+                    <div class="item">K-Means Clustering</div>
+                    <div class="item">PCA (Dim. Reduction)</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🧠 التعلم العميق (Deep Learning)</h2>
+                <span class="category-title">Neural Networks</span>
+                <div class="items-list">
+                    <div class="item deep-tag">Backpropagation</div>
+                    <div class="item deep-tag">CNNs (Image)</div>
+                    <div class="item deep-tag">RNNs & LSTMs</div>
+                    <div class="item deep-tag">Transformers</div>
+                </div>
+                <span class="category-title">Frameworks</span>
+                <div class="items-list">
+                    <div class="item code-tag">PyTorch</div>
+                    <div class="item code-tag">TensorFlow / Keras</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📊 التقييم والمفاهيم المتقدمة</h2>
+                <span class="category-title">Metrics</span>
+                <div class="items-list">
+                    <div class="item">Precision & Recall</div>
+                    <div class="item">F1-Score</div>
+                    <div class="item">ROC-AUC Curve</div>
+                </div>
+                <span class="category-title">Advanced NLP</span>
+                <div class="items-list">
+                    <div class="item">Embeddings</div>
+                    <div class="item">Attention Mechanisms</div>
+                    <div class="item">GANs</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 رؤية ZRR لمهندس الـ ML</h3>
+                <p>الفرق بين المبرمج العادي ومهندس الـ ML هو "المنطق الرياضي". لا تتعلم المكتبات فقط، بل افهم كيف تعمل الخوارزمية من الداخل (Under the hood).</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>ما الفرق بين ML Engineer و AI Engineer؟</h4>
+                    <p>مهندس الـ ML يركز على بناء وتدريب النماذج والتعامل مع البيانات الضخمة والرياضيات، بينما مهندس الـ AI غالباً ما يركز على دمج النماذج الجاهزة (مثل LLMs) في تطبيقات ذكية باستخدام APIs.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>أي مكتبة أفضل: PyTorch أم TensorFlow؟</h4>
+                    <p>حالياً PyTorch هي المفضلة في الأبحاث والشركات الناشئة لمرونتها، بينما TensorFlow لا تزال قوية في بيئات الإنتاج الضخمة. كمهندس في 2026، يفضل أن تكون مطلعاً على الاثنين.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>لماذا الرياضيات مهمة جداً هنا؟</h4>
+                    <p>بدون الجبر الخطي والتفاضل، لن تفهم كيف يتم تحديث الأوزان في الشبكة العصبية (Backpropagation)، مما يجعلك مجرد مستخدم للأدوات وليس مطوراً لها.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

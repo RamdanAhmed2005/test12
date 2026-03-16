@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار خبير DevRel 2026 | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #10b981; /* أخضر زمردي - لون التواصل */
+            --secondary: #059669;
+            --bg: #f0fdf4;
+            --card-bg: #ffffff;
+            --text-main: #064e3b;
+            --text-muted: #374151;
+            --accent: #f59e0b;
+            --header-gradient: linear-gradient(135deg, #064e3b 0%, #10b981 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.7; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            border-bottom: 2px solid var(--primary);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--text-main); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--primary);
+            font-size: 0.8rem;
+            margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #ecfdf5;
+            color: #065f46;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #d1fae5;
+        }
+
+        .social-tag { background: #fffbeb; color: #92400e; border-color: #fef3c7; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 1px dashed var(--primary);
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 15px; padding: 25px; border-radius: 12px; }
+        .faq-item h4 { color: var(--secondary); margin-bottom: 8px; }
+
+        footer {
+            background: #064e3b;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--primary);">DevRel Roadmap 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار علاقات المطورين (DevRel)</h1>
+        <p>كن صوت المطورين داخل الشركة، وسفير التقنية في المجتمعات البرمجية</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🗣️ التواصل والمرافعة</h2>
+                <span class="category-title">Public Speaking</span>
+                <div class="items-list">
+                    <div class="item">Presentation Techniques</div>
+                    <div class="item">Storytelling</div>
+                    <div class="item">Handling Q&A</div>
+                </div>
+                <span class="category-title">Writing Skills</span>
+                <div class="items-list">
+                    <div class="item">Technical Blogging</div>
+                    <div class="item">Documentation</div>
+                    <div class="item">Code Samples</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🤝 إدارة المجتمعات</h2>
+                <span class="category-title">Engagement</span>
+                <div class="items-list">
+                    <div class="item social-tag">Event Planning</div>
+                    <div class="item social-tag">Discord/Slack Moderation</div>
+                    <div class="item">Recognition Programs</div>
+                </div>
+                <span class="category-title">Strategy</span>
+                <div class="items-list">
+                    <div class="item">Code of Conduct</div>
+                    <div class="item">Conflict Resolution</div>
+                    <div class="item">Feedback Loops</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>💻 الأساس التقني</h2>
+                <span class="category-title">Development</span>
+                <div class="items-list">
+                    <div class="item">Python / JavaScript / Go</div>
+                    <div class="item">APIs & SDKs Building</div>
+                    <div class="item">Open Source Contribution</div>
+                </div>
+                <span class="category-title">Developer Experience</span>
+                <div class="items-list">
+                    <div class="item">Onboarding Flow</div>
+                    <div class="item">CLI Tools</div>
+                    <div class="item">Sample Projects</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📹 صناعة المحتوى والتسويق</h2>
+                <span class="category-title">Video & Social</span>
+                <div class="items-list">
+                    <div class="item social-tag">Live Streaming</div>
+                    <div class="item social-tag">Video Production</div>
+                    <div class="item">Personal Branding</div>
+                </div>
+                <span class="category-title">Metrics</span>
+                <div class="items-list">
+                    <div class="item">Engagement Rates</div>
+                    <div class="item">Community Growth</div>
+                    <div class="item">Sentiment Analysis</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 فلسفة ZRR في الـ DevRel</h3>
+                <p>"المطورون يثقون في المطورين". لا تحاول بيع المنتج، بل حاول حل المشكلة. الـ DevRel الناجح هو من يبني جسور الثقة قبل أن يبني خطوط الكود.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--secondary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>ما الفرق بين الـ DevRel والـ Marketing؟</h4>
+                    <p>التسويق التقليدي يستهدف صناع القرار، بينما الـ DevRel يستهدف المطورين أنفسهم من خلال تقديم قيمة تقنية حقيقية، دروس تعليمية، وأدوات تسهل عملهم.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل يجب أن أكون مبرمجاً محترفاً؟</h4>
+                    <p>نعم، يجب أن تكون قادراً على كتابة الكود وبناء مشاريع تجريبية، لأنك ستتحدث مع مطورين ولن يثقوا في كلامك إذا لم تكن تفهم تفاصيلهم التقنية الدقيقة.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هو الـ Developer Advocate؟</h4>
+                    <p>هو دور داخل الـ DevRel يركز على تمثيل المطورين داخل الشركة، حيث ينقل مشاكلهم لفريق الهندسة ويقترح تحسينات بناءً على تجربتهم الواقعية.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

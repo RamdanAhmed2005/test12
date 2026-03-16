@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار عالم البيانات والذكاء الاصطناعي | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e40af; /* أزرق ملكي للبيانات */
+            --secondary: #3b82f6;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #f59e0b;
+            --header-gradient: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--primary);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .math-focus { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 20px; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer {
+            background: var(--text-main);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">AI & Data Scientist 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار خبير البيانات والذكاء الاصطناعي</h1>
+        <p>من الأساسيات الرياضية إلى بناء النماذج التنبؤية المعقدة وأتمتة العمليات</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>📐 الرياضيات والإحصاء</h2>
+                <span class="category-title">Foundations</span>
+                <div class="items-list">
+                    <div class="item math-focus">Linear Algebra</div>
+                    <div class="item math-focus">Calculus</div>
+                    <div class="item">Differential Calculus</div>
+                </div>
+                <span class="category-title">Statistics & Testing</span>
+                <div class="items-list">
+                    <div class="item math-focus">Hypothesis Testing</div>
+                    <div class="item">AB Testing</div>
+                    <div class="item">Probability & Sampling</div>
+                    <div class="item">CLT Concepts</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>💻 البرمجة وقواعد البيانات</h2>
+                <span class="category-title">Languages</span>
+                <div class="items-list">
+                    <div class="item">Python</div>
+                    <div class="item">Data Structures</div>
+                    <div class="item">Algorithms</div>
+                </div>
+                <span class="category-title">Data Retrieval</span>
+                <div class="items-list">
+                    <div class="item">SQL Mastery</div>
+                    <div class="item">Pandas / NumPy</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📈 الاقتصاد القياسي والسلاسل الزمنية</h2>
+                <span class="category-title">Analysis Models</span>
+                <div class="items-list">
+                    <div class="item">Linear Regression</div>
+                    <div class="item">ARIMA Models</div>
+                    <div class="item">Forecasting</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🤖 تعلم الآلة (Machine Learning)</h2>
+                <span class="category-title">Core Types</span>
+                <div class="items-list">
+                    <div class="item">Supervised Learning</div>
+                    <div class="item">Unsupervised Learning</div>
+                    <div class="item">Pattern Recognition</div>
+                </div>
+                <span class="category-title">Deep Learning</span>
+                <div class="items-list">
+                    <div class="item math-focus">CNN / RNN</div>
+                    <div class="item math-focus">Transformers</div>
+                    <div class="item">LSTM</div>
+                    <div class="item">Transfer Learning</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📊 تحليل البيانات الاستكشافي (EDA)</h2>
+                <span class="category-title">Tools</span>
+                <div class="items-list">
+                    <div class="item">Matplotlib</div>
+                    <div class="item">Seaborn</div>
+                    <div class="item">Exploratory Analysis</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>⚙️ العمليات (MLOps)</h2>
+                <span class="category-title">Engineering</span>
+                <div class="items-list">
+                    <div class="item">Deployment Models</div>
+                    <div class="item">CI/CD for ML</div>
+                    <div class="item">Model Monitoring</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 نصيحة ZRR لعلماء البيانات</h3>
+                <p>عالم البيانات ليس مجرد شخص يكتب كود، بل هو "باحث" يستخدم الأرقام لحل ألغاز الأعمال. لا تهمل الرياضيات فهي المحرك الحقيقي خلف كل نموذج ذكاء اصطناعي.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>هل أحتاج لشهادة جامعية لأصبح عالم بيانات؟</h4>
+                    <p>لا تحتاج لشهادة محددة، ولكن مجالات مثل علوم الكمبيوتر أو الرياضيات أو الإحصاء تساعدك كثيراً. حالياً، المهارات العملية والمشاريع هي الفيصل الأكبر في التوظيف.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما الفرق بين عالم البيانات ومهندس الذكاء الاصطناعي؟</h4>
+                    <p>عالم البيانات (Data Scientist) يركز أكثر على البحث والاستنتاج من البيانات وبناء النماذج، بينما مهندس الذكاء الاصطناعي (AI Engineer) يركز على دمج هذه النماذج في تطبيقات برمجية وتطوير أنظمة عملاء (Agents).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>كم يستغرق الوقت لأصبح محترفاً؟</h4>
+                    <p>المجال عميق جداً، المسار الأساسي قد يستغرق من 6 أشهر إلى سنة من الدراسة المتواصلة، مع الاستمرار في التعلم لأن تقنيات الـ AI تتطور يومياً.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار مهندس حلول برمجية | ZRR Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a; /* كحلي ملكي */
+            --secondary: #b45309; /* ذهبي معتق */
+            --bg: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent: #3b82f6;
+            --header-gradient: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: 0.3s ease; }
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        nav {
+            background: var(--card-bg);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
+
+        .hero-mini {
+            background: var(--header-gradient);
+            color: white;
+            padding: 80px 5% 150px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        .hero-mini h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 900; }
+
+        .container { max-width: 1200px; margin: -100px auto 100px; padding: 0 20px; position: relative; z-index: 10; }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+        .section-card::after {
+            content: ''; position: absolute; top: 0; right: 0; width: 5px; height: 100%; background: var(--secondary); border-radius: 0 20px 20px 0;
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        .category-title {
+            font-weight: 900;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+            opacity: 0.9;
+        }
+
+        .items-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background: #f8fafc;
+            color: #334155;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+        }
+
+        .critical-item { background: #fff7ed; color: #9a3412; border-color: #ffedd5; }
+
+        .info-box {
+            grid-column: 1 / -1;
+            background: var(--primary);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-section { margin-top: 50px; grid-column: 1 / -1; }
+        .faq-item { background: white; margin-bottom: 15px; padding: 25px; border-radius: 15px; border-right: 5px solid var(--secondary); }
+        .faq-item h4 { color: var(--primary); margin-bottom: 10px; }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ZRR <span>Academy</span></a>
+        <div style="font-weight: bold; color: var(--text-muted);">Software Architect 2026</div>
+    </nav>
+
+    <header class="hero-mini">
+        <h1>مسار مهندس معمارية البرمجيات</h1>
+        <p>انتقل من كتابة الكود إلى تصميم الأنظمة المعقدة واتخاذ القرارات التقنية الاستراتيجية</p>
+    </header>
+
+    <main class="container">
+        <div class="roadmap-grid">
+
+            <div class="section-card">
+                <h2>🏗️ مفاهيم المعمارية</h2>
+                <span class="category-title">Architecture Levels</span>
+                <div class="items-list">
+                    <div class="item">Application Architecture</div>
+                    <div class="item">Solution Architecture</div>
+                    <div class="item">Enterprise Architecture</div>
+                </div>
+                <span class="category-title">Core Skills</span>
+                <div class="items-list">
+                    <div class="item critical-item">Decision Making</div>
+                    <div class="item">Simplifying Systems</div>
+                    <div class="item">Requirements Elicitation</div>
+                    <div class="item">Technical Documentation</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>📐 الأنماط والمبادئ</h2>
+                <span class="category-title">Design Principles</span>
+                <div class="items-list">
+                    <div class="item">SOLID Principles</div>
+                    <div class="item">DRY / KISS / YAGNI</div>
+                    <div class="item">Domain Driven Design (DDD)</div>
+                </div>
+                <span class="category-title">Architecture Patterns</span>
+                <div class="items-list">
+                    <div class="item critical-item">Microservices</div>
+                    <div class="item">Serverless</div>
+                    <div class="item">Layered (N-Tier)</div>
+                    <div class="item">Event-Driven Architecture</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🌐 الأنظمة الموزعة والبيانات</h2>
+                <span class="category-title">Distributed Concepts</span>
+                <div class="items-list">
+                    <div class="item critical-item">CAP Theorem</div>
+                    <div class="item">Eventual Consistency</div>
+                    <div class="item">Load Balancing</div>
+                    <div class="item">Service Mesh</div>
+                </div>
+                <span class="category-title">Data Strategy</span>
+                <div class="items-list">
+                    <div class="item">SQL vs NoSQL</div>
+                    <div class="item">CQRS Pattern</div>
+                    <div class="item">Sharding & Partitioning</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🔗 التواصل والتكامل</h2>
+                <span class="category-title">API Styles</span>
+                <div class="items-list">
+                    <div class="item">RESTful APIs</div>
+                    <div class="item">GraphQL</div>
+                    <div class="item">gRPC (High Performance)</div>
+                </div>
+                <span class="category-title">Messaging</span>
+                <div class="items-list">
+                    <div class="item critical-item">Message Queues (RabbitMQ/Kafka)</div>
+                    <div class="item">Pub/Sub Models</div>
+                    <div class="item">WebSockets</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>🚀 العمليات والجودة</h2>
+                <span class="category-title">Infrastructure</span>
+                <div class="items-list">
+                    <div class="item">Containers (Docker/K8s)</div>
+                    <div class="item">Infrastructure as Code (IaC)</div>
+                    <div class="item">Cloud Native Patterns</div>
+                </div>
+                <span class="category-title">Quality Attributes</span>
+                <div class="items-list">
+                    <div class="item critical-item">Scalability</div>
+                    <div class="item">High Availability</div>
+                    <div class="item">Security (OAuth2/OpenID)</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 عقلية الـ Architect في ZRR</h3>
+                <p>كل قرار تتخذه هو "مقايضة" (Trade-off). لا يوجد حل مثالي، يوجد فقط حل يناسب القيود والميزانية والاحتياجات الحالية للمشروع.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2 style="margin-bottom: 25px; text-align: center; color: var(--primary);">الأسئلة الشائعة</h2>
+                
+                <div class="faq-item">
+                    <h4>متى أتحول من Senior Developer إلى Architect؟</h4>
+                    <p>عندما تبدأ في الاهتمام بـ "لماذا" نستخدم هذه الأداة بدلاً من "كيف" نستخدمها، وعندما تمتلك القدرة على رؤية الصورة الكاملة للنظام وتأثير القرارات التقنية على البزنس.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>ما هي أهمية الـ CAP Theorem؟</h4>
+                    <p>هي قاعدة تخبرك أنه في أي نظام موزع، لا يمكنك الحصول إلا على اثنين من ثلاث: الاتساق (Consistency)، التوفر (Availability)، وتحمل انقسام الشبكة (Partition Tolerance).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>هل يجب أن يستمر الـ Architect في كتابة الكود؟</h4>
+                    <p>نعم، يفضل جداً! الـ Architect الذي ينقطع عن الكود يفقد إحساسه بالتحديات الواقعية التي يواجهها المطورون، مما قد يؤدي لقرارات نظرية غير قابلة للتطبيق.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="font-size: 1.2rem; font-weight: 900;">مطور المشروع: رمضان أحمد</div>
+        <p style="opacity: 0.6; margin-top: 10px;">جميع الحقوق محفوظة لـ ZRR Academy © 2026</p>
+    </footer>
+
+</body>
+</html>
