@@ -6,17 +6,20 @@
     <title>ZRR Academy | موسوعة المسارات</title>
     <link rel="website icon" type="" href="ZRR.png">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <style>
+        /* تعريف الألوان الأساسية للموقع (المتغيرات) */
         :root {
-            --primary: #4f46e5;
-            --secondary: #0ea5e9;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text-main: #0f172a;
-            --text-muted: #64748b;
+            --primary: #4f46e5;     /* اللون الأساسي - أزرق */
+            --secondary: #0ea5e9;   /* اللون الثانوي - سماوي */
+            --bg: #f8fafc;          /* لون الخلفية في الوضع المضيء */
+            --card-bg: #ffffff;    /* لون خلفية الكروت */
+            --text-main: #0f172a;   /* لون النص الأساسي */
+            --text-muted: #64748b; /* لون النص الباهت */
             --header-gradient: linear-gradient(135deg, #0f172a 0%, #4f46e5 100%);
         }
 
+        /* تعديل الألوان عند تفعيل الوضع الليلي */
         .dark-mode {
             --bg: #0b0f19;
             --card-bg: #1e293b;
@@ -25,9 +28,11 @@
             --header-gradient: linear-gradient(135deg, #020617 0%, #1e1b4b 100%);
         }
 
+        /* تنسيقات عامة لكل العناصر */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; transition: all 0.3s ease; }
         body { background-color: var(--bg); color: var(--text-main); overflow-x: hidden; }
 
+        /* تنسيق شريط التنقل (الـ Navbar) */
         nav {
             background: var(--card-bg);
             padding: 15px 5%;
@@ -42,6 +47,7 @@
         .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); text-decoration: none; }
         .logo span { color: var(--secondary); }
 
+        /* زر تبديل الوضع الليلي */
         .theme-btn {
             background: var(--primary);
             color: white;
@@ -50,11 +56,9 @@
             border-radius: 50px;
             cursor: pointer;
             font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
+        /* الجزء العلوي من الصفحة (الـ Hero Section) */
         .hero {
             background: var(--header-gradient);
             color: white;
@@ -66,6 +70,7 @@
         }
         .hero h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 900; }
 
+        /* كروت الإحصائيات (الأرقام اللي تحت الهيدر) */
         .stats { 
             display: flex; 
             justify-content: center; 
@@ -85,8 +90,8 @@
             min-width: 220px;
             border-bottom: 5px solid var(--secondary);
         }
-        .stat-card h2 { color: var(--primary); font-size: 2.5rem; font-weight: 900; }
 
+        /* تنسيق شريط البحث */
         .filter-section { padding: 120px 5% 20px; text-align: center; }
         .search-bar {
             width: 100%; max-width: 700px; padding: 18px 30px; border-radius: 50px;
@@ -94,43 +99,37 @@
             outline: none; font-size: 1.1rem;
         }
 
+        /* تنسيق شبكة الكروت (الـ Grid) */
         .container { max-width: 1300px; margin: 40px auto; padding: 0 20px; }
         .tracks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         
+        /* تنسيق الكارت الفردي */
         .card {
             background: var(--card-bg); border-radius: 25px; overflow: hidden;
             box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.4s;
             border: 1px solid rgba(0,0,0,0.05);
             height: 100%; display: flex; flex-direction: column;
-            cursor: pointer;
         }
-        .card:hover { transform: translateY(-10px); }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(79, 70, 229, 0.2); }
         .card-img { width: 100%; height: 200px; background: #222; overflow: hidden; }
-        .card-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: 0.5s; }
-        .card:hover .card-img img { opacity: 1; scale: 1.1; }
+        .card-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.85; transition: 0.5s; }
         
-        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .card-content { padding: 25px; flex-grow: 1; }
         .card-content h3 { margin-bottom: 12px; color: var(--primary); font-size: 1.4rem; }
-        .card-content p { color: var(--text-muted); font-size: 1rem; line-height: 1.6; }
-
-        footer {
-            background: var(--text-main);
-            color: white;
-            padding: 60px 5%;
-            text-align: center;
-            margin-top: 100px;
-        }
-        .contact-info { color: var(--secondary); font-size: 1.2rem; text-decoration: none; font-weight: bold; }
         
+        /* شارة "قريباً" للكروت غير المفعلة */
         .status-badge {
             font-size: 0.7rem;
-            background: #eee;
-            padding: 2px 8px;
+            background: rgba(14, 165, 233, 0.1);
+            padding: 4px 12px;
             border-radius: 10px;
-            color: #777;
+            color: var(--secondary);
             margin-right: 10px;
-            font-weight: normal;
         }
+
+        /* تنسيق أسفل الصفحة (الـ Footer) */
+        footer { background: var(--text-main); color: white; padding: 60px 5%; text-align: center; margin-top: 100px; }
+        .contact-info { color: var(--secondary); font-size: 1.2rem; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -142,17 +141,17 @@
 
     <header class="hero">
         <h1>موسوعة المسارات التعليمية</h1>
-        <p>دليلك الشامل لتعلم البرمجة من الصفر مع كبار المهندسين</p>
+        <p>دليلك الشامل لتعلم البرمجة تحت إشراف: زياد ورضوان ورمضان</p>
     </header>
 
     <section class="stats">
-        <div class="stat-card"><h2>+70</h2><p>مسار وتقنية</p></div>
+        <div class="stat-card"><h2>+80</h2><p>مسار وتقنية</p></div>
         <div class="stat-card"><h2>2026</h2><p>تحديثات ذكية</p></div>
-        <div class="stat-card"><h2>ZRR</h2><p>جودة عالمية</p></div>
+        <div class="stat-card"><h2>ZRR</h2><p>احترافية عالمية</p></div>
     </section>
 
     <section class="filter-section">
-        <input type="text" class="search-bar" id="searchInput" placeholder="ابحث عن مسار (React, Python, DevOps...)" onkeyup="search()">
+        <input type="text" class="search-bar" id="searchInput" placeholder="ابحث عن مسار..." onkeyup="search()">
     </section>
 
     <main class="container">
@@ -160,12 +159,12 @@
     </main>
 
     <footer>
-        <div style="font-size: 1.4rem; font-weight: 900; margin-bottom: 15px;">المطور: <a class="contact-info" href="#">رمضان أحمد</a></div>
-        <div>لالتواصل: <a href="tel:+201107754314" class="contact-info">01107754314</a></div>
-        <div style="margin-top: 25px; opacity: 0.6;">جميع الحقوق محفوظة © 2026 - ZRR Academy</div>
+        <div>المطور: <a class="contact-info" href="https://github.com/RamdanAhmed2005">رمضان أحمد</a></div>
+        <div>للتواصل: <a href="tel:+201107754314" class="contact-info">01107754314</a></div>
     </footer>
 
     <script>
+        // قائمة بأسماء كل المسارات البرمجية
         const roadmaps = [
             "Frontend", "Backend", "Full Stack", "DevOps", "DevSecOps", "Data Analyst", "AI Engineer", 
             "AI and Data Scientist", "Data Engineer", "Android", "Machine Learning", "PostgreSQL", 
@@ -181,48 +180,35 @@
             "Elasticsearch", "WordPress", "Django", "Ruby", "Ruby on Rails", "Claude Code", "Vibe Coding"
         ];
 
-        const specificImages = {
-            "Frontend": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=400&auto=format&fit=crop",
-            "Backend": "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?q=80&w=400&auto=format&fit=crop",
-            "Full Stack": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=400&auto=format&fit=crop",
-            "DevOps": "https://images.unsplash.com/photo-1618401471353-b98aadebc25a?q=80&w=400&auto=format&fit=crop",
-            "DevSecOps": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=400&auto=format&fit=crop",
-            "Data Analyst": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=400&auto=format&fit=crop",
-            "AI Engineer": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=400&auto=format&fit=crop",
-            "React": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=400&auto=format&fit=crop",
-            "Python": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400&auto=format&fit=crop",
-            "Cyber Security": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=400&auto=format&fit=crop"
+        // الصفحات المتاحة فعلياً لربطها بالكروت
+        const availablePages = {
+            "Frontend": "frontend.html", "Backend": "backend.html", "Full Stack": "fullstack.html",
+            "DevOps": "devops.html", "DevSecOps": "devsecops.html", "Data Analyst": "data-analyst.html",
+            "AI Engineer": "ai-engineer.html", "MLOps": "mlops.html", "Product Manager": "product-manager.html",
+            "Engineering Manager": "engineering-manager.html", "Developer Relations": "devrel.html",
+            "BI Analyst": "bi-analyst.html", "AI and Data Scientist": "ai-data-scientist.html",
+            "Data Engineer": "data-engineer.html", "Android": "android.html", "iOS": "ios-developer.html",
+            "Blockchain": "blockchain.html", "QA": "qa-engineer.html", "Software Architect": "software-architect.html",
+            "Cyber Security": "cyber-security.html", "UX Design": "ux-design.html",
+            "Technical Writer": "technical-writer.html", "Game Developer": "game-developer.html",
+            "Server Side Game Developer": "server-game-dev.html", "PostgreSQL": "postgresql-dba.html",
+            "Machine Learning": "ml-engineer.html"
         };
 
-        function getImageUrl(name, index) {
-            if (specificImages[name]) return specificImages[name];
-            return `https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop&sig=${index}`;
-        }
-
+        // الدالة المسؤولة عن عرض الكروت في الصفحة
         function render(list) {
             const grid = document.getElementById('tracksGrid');
             grid.innerHTML = list.map((name, i) => {
-                const imageUrl = getImageUrl(name, i);
                 
-                let pageUrl = "#";
-                let badge = "";
+                // 🛑 هنا الجزء اللي بتسأل عنه لتغيير الصور 🛑
+                // السطر اللي تحت ده هو اللي بيجيب الصور من Unsplash
+                // كلمة "${name}" بتخلي الموقع يدور بصورة اسم اللغة (مثلاً Python)
+                // وكلمة "programming" مضافة عشان تضمن إن الصور تكون برمجية
+                // وكلمة "sig=${i}" هي "البصمة" اللي بتخلي كل صورة تختلف عن التانية
+                const imageUrl = `ZRR Academy.png?${name},programming&sig=${i}`;
 
-                // خريطة الصفحات المتاحة حالياً
-                const availablePages = {
-                    "Frontend": "frontend.html",
-                    "Backend": "backend.html",
-                    "Full Stack": "fullstack.html",
-                    "DevOps": "devops.html",
-                    "DevSecOps": "devsecops.html",
-                    "Data Analyst": "data-analyst.html",
-                    "AI Engineer": "ai-engineer.html"
-                };
-
-                if (availablePages[name]) {
-                    pageUrl = availablePages[name];
-                } else {
-                    badge = '<span class="status-badge">قريباً</span>';
-                }
+                let pageUrl = availablePages[name] || "#";
+                let badge = availablePages[name] ? "" : '<span class="status-badge">قريباً</span>';
                 
                 return `
                 <a href="${pageUrl}" style="text-decoration: none; color: inherit;">
@@ -239,18 +225,20 @@
             }).join('');
         }
 
+        // دالة البحث لتصفية الكروت
         function search() {
             const query = document.getElementById('searchInput').value.toLowerCase();
-            const filtered = roadmaps.filter(item => item.toLowerCase().includes(query));
-            render(filtered);
+            render(roadmaps.filter(item => item.toLowerCase().includes(query)));
         }
 
+        // دالة تبديل الوضع الليلي والمضيء
         function toggleTheme() {
             document.body.classList.toggle('dark-mode');
             const isDark = document.body.classList.contains('dark-mode');
             document.getElementById('themeBtn').innerHTML = isDark ? 'الوضع المضيء ☀️' : 'الوضع الليلي 🌙';
         }
 
+        // تشغيل عرض الكروت بمجرد تحميل الصفحة
         window.onload = () => render(roadmaps);
     </script>
 </body>
